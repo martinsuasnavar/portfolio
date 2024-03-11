@@ -57,7 +57,7 @@ export default function NavBar({switchLanguage} : Internalization) {
     ];
 
     const subMenuArray = [
-        <section key="switch" className="bg-black p-2 text-sm">{switchLanguage}</section>,
+        <section key="switch" className="text-white bg-black p-2 text-sm">{switchLanguage}</section>,
         
         <SubMenuButton key={options[1].code} onClick={() => setOption(options[1])}>
             <span className="flex justify-left ">
