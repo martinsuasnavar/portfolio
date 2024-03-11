@@ -15,6 +15,7 @@ interface Project {
 
 export default function Home() {
   const pIntroStyle = "mb-10 text-white";
+  const presentationCardStyle = "text-2xl";
   //const { locale, locales, defaultLocale } = useRouter();
   //const { title, content } = newsContent["en-US"];
   const t = useTranslations("Home");
@@ -44,9 +45,9 @@ export default function Home() {
         <section className="text-8xl">
             <div className="flex justify-center">
                <div className="ml-10 p-7 sm:ml-0 sm:p-0 flex">
-               <text className="text-left mt-20 bg-gradient-to-r from-white via-white to-pink-200 inline-block text-transparent bg-clip-text w-80"
+               <text className="text-left mt-10 bg-gradient-to-r from-white via-white to-pink-200 inline-block text-transparent bg-clip-text w-80"
                >{t("greet")}</text>
-               <div className="mt-7 ml-4 text-pink-100 text-3xl text-left">
+               <div className=" ml-4 text-pink-100 text-3xl text-left">
                <section>
                   <div className="justify-left flex mt-10 mb-4">
                   <Image src="/dev.png"
@@ -71,10 +72,8 @@ export default function Home() {
 
         <section className="m-20 w-3/6 ml-auto mr-auto">
 
-          <div className="text-3xl">
-            <WhiteBox>
-              {t("presentationCards.intro")}
-            </WhiteBox>
+          <div className={presentationCardStyle}>
+            <WhiteBox>{t("presentationCards.intro")}  </WhiteBox>
           </div>
 
           <div >
@@ -91,9 +90,13 @@ export default function Home() {
           </p>
 
           <div className="h-10"/>
-          <div className="text-3xl">
+
+
+          <div className={presentationCardStyle}>
             <WhiteBox>{t("presentationCards.techdetails")}</WhiteBox>
           </div>
+
+
           <div className="h-10"/>
           <p className={pIntroStyle}>
           {t("techDetails.favStack")}
@@ -117,9 +120,13 @@ export default function Home() {
         <Separator topMargin="10" bottomMargin="10"/>
 
         <section className="m-20">
-        <div className="text-3xl">
+
+
+        <div className={presentationCardStyle}>
         <WhiteBox>{t("presentationCards.myProjects")}</WhiteBox>
         </div>
+
+
         <div className="w-3/6 m-20 w-3/4 ml-auto mr-auto">
             {projectsArray.map(project => (
                 <div key={project.name} className="flex flex-col items-center mb-40">
