@@ -54,7 +54,7 @@ export default function Home() {
                     height={100}
                     alt="dev picture"/> 
                   </div>
-                  <div>I'm Martin,</div>
+                  <div>I am Martin,</div>
                   <div>a full stack</div>
                   <div>dev</div>
                </section>
