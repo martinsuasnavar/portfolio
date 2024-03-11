@@ -42,7 +42,7 @@ export default function Home() {
         <div className="h-20"/>
       
 
-        <section className="text-7xl mr-4 sm:mr-0 sm:text-8xl">
+        <section className="text-7xl sm:text-8xl">
             <div className="flex justify-center">
                <div className="p-7 sm:ml-0 sm:p-0 flex">
                <text className=" text-left mt-10 bg-gradient-to-r from-white via-white to-pink-200 inline-block text-transparent bg-clip-text"
@@ -54,7 +54,7 @@ export default function Home() {
                     height={80}
                     alt="dev picture"/> 
                   </div>
-                  <div>
+                  <div className="ml-4 sm:ml-0 ">
                     <div>{t("fastPresentation.0")}</div>
                     <div>{t("fastPresentation.1")}</div>
                     <div>{t("fastPresentation.2")}</div>
