@@ -1,0 +1,28 @@
+{
+    "Home": {
+        "greet": "Hello there!",
+        "presentationCards": {
+            "intro": "A brief intro...",
+            "techdetails": "Technical details",
+            "myProjects": "My projects"
+        },
+        "introParagraphs": { 
+           "0": "Greetings! I'm Martin",
+           "1": "A long time ago, when I was 16, I got my first experience programming as I had to modify videogames in Unity3D with the C# language",
+           "2": "I decided to test myself on a bigger challenge by diving in web development. Since 2023 I started developing websites by myself, first tackling off the Interface but as time went on I also developed APIs and server related functions."
+        },
+        "techDetails": {
+            "favStack": "My favorite tech stack is",
+            "stackDescs": {
+                "0": "to design interfaces",
+                "1": "to build APIs and server related functions",
+                "2": "to manage databases"
+            },
+            "note": "If the client requires it, Laravel can be switched to Node.js (with Express.js framework)."
+        },
+        "myProjects": {
+            "0": "A Trello like app, but with simplified panels and no need to login. User data is temporaly stored in cookies and can be downloaded and imported back into the app.",
+            "1": "Chat app created in Laravel with the ability to create and join rooms. Takes advantage of using a MySQL database."
+         }
+    }
+}
