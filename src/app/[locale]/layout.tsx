@@ -19,7 +19,7 @@ interface RootLayoutProps {
 
 /* reusable classes */
 // contact box
-const contactBox = "rounded bg-gradient-to-r from-pink-900 to-indigo-900  w-20 sm:w-40 h-30 sm:h-30 m-4 p-1 sm:p-5 text-center transition-transform duration-300 transform hover:scale-105 ";
+const contactBox = "rounded bg-gradient-to-r from-pink-900 to-indigo-900  w-20 sm:w-40 h-30 sm:h-30 m-4 p-1 sm:p-5 text-center transition-transform duration-300 transform hover:scale-105";
 const cBoxContent = "flex flex-col justify-center items-center ml-auto mr-auto";
 const cBContentText = "hidden sm:block mt-auto";
 

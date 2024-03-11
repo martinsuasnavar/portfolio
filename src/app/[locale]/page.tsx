@@ -9,6 +9,7 @@ interface Project {
     name: string;
     description: string;
     warning: string;
+    link: string;
 }
 
 
@@ -25,13 +26,15 @@ export default function Home() {
     imgSrc: "/project-1.png",
     name: "PanelBoard Lite",
     description: `${t("myProjects.projectList.0")}`,
-    warning: `${t("myProjects.warning")} https://github.com/martinsuasnavar/panelboard-lite`,
+    warning: `${t("myProjects.warning")}`,
+    link: "https://github.com/martinsuasnavar/panelboard-lite"
   };
   const project2: Project = {
     imgSrc: "/project-2.png",
     name: "Leaf Messenger",
     description: `${t("myProjects.projectList.1")}`,
-    warning: `${t("myProjects.warning")} https://github.com/martinsuasnavar/leaf-messenger`,
+    warning: `${t("myProjects.warning")}`,
+    link: "https://github.com/martinsuasnavar/leaf-messenger"
   };
 
   const projectsArray = [project1, project2];
@@ -48,11 +51,13 @@ export default function Home() {
                <text className=" text-left mt-10 bg-gradient-to-r from-white via-white to-pink-200 inline-block text-transparent bg-clip-text"
                >{t("greet")}</text>
                <section className="ml-10 text-pink-100 text-3xl text-left">
-                  <div className="justify-left flex mt-10 mb-4">
+                  <div className="justify-left flex mt-10 mb-4 ">
+                  <div className=" transition-transform duration-300 transform hover:scale-105">
                   <Image src="/dev.png"
                     width={80}
                     height={80}
                     alt="dev picture"/> 
+                  </div>
                   </div>
                   <div>{t("fastPresentation.0")}</div>
                   <div>{t("fastPresentation.1")}</div>
@@ -132,7 +137,8 @@ export default function Home() {
                     <div className="h-10"/>
                     <p>{project.description}</p>
                     <br/>
-                    <div className="text-yellow-500">⚠ {project.warning}</div>
+                    <div className="text-yellow-500">⚠ {project.warning} </div>
+                    <a href={project.link} className="mt-10 bg-indigo-900 hover:bg-indigo-800 rounded p-2">Ver en GitHub</a>
                 </div>
             ))}
         </div>
