@@ -2,7 +2,7 @@
 
 import WhiteBox from "./white-box";
 import Image from "next/image";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import SubMenu from "./sub-menu";
 import SubMenuButton from "./buttons/sub-menu-button";
 import { useRouter } from "next/navigation";
@@ -30,11 +30,11 @@ export default function NavBar({switchLanguage} : Internalization) {
         setLanguageMenu(false);
     };
 
-    const handleClickOutside = (event: MouseEvent) => {
+    const handleClickOutside = useCallback((event: MouseEvent) => {
         if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
             closeMenu();
         }
-    };
+    }, [menuRef, closeMenu]);
 
     const setOption = async (option: Option) => {
         setAllowMenuClosing(false);
