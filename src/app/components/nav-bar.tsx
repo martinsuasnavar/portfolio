@@ -15,7 +15,7 @@ export default function NavBar() {
     const [languageMenu, setLanguageMenu] = useState(false);
     const [allowMenuClosing, setAllowMenuClosing] = useState(true);
     const router = useRouter();
-    const menuRef = useRef(null);
+    const menuRef = useRef<HTMLDivElement>(null);
 
     const toggleLanguageMenu = () => {
         setLanguageMenu(!languageMenu);
@@ -26,7 +26,7 @@ export default function NavBar() {
     };
 
     const handleClickOutside = (event: MouseEvent) => {
-        if (menuRef.current && !menuRef.current.contains(event.target)) {
+        if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
             closeMenu();
         }
     };
@@ -60,7 +60,7 @@ export default function NavBar() {
         <div className="">
             <nav className="max-w-full fixed top-0 left-0 w-full">
                 <div className="p-2 bg-gradient-to-r from-indigo-950 to-pink-900">
-                    <a  href="/"><WhiteBox className="transition-transform duration-300 transform hover:scale-105" >suasnavar.dev</WhiteBox></a>
+                    <a  href="/"><WhiteBox >suasnavar.dev</WhiteBox></a>
                     <button onClick={toggleLanguageMenu} className="float-right transition-transform duration-300 transform hover:scale-105">
                         <Image
                             src="/language.png"
