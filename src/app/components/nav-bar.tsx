@@ -30,17 +30,17 @@ export default function NavBar({switchLanguage} : Internalization) {
         setLanguageMenu(false);
     };
 
-    const handleClickOutside = useCallback((event: MouseEvent) => {
-        if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-            closeMenu();
-        }
-    }, [menuRef, closeMenu]);
-
     const setOption = async (option: Option) => {
         setAllowMenuClosing(false);
         await router.push(`/${option.code}`);
         setAllowMenuClosing(true);
     };
+
+    const handleClickOutside = useCallback((event: MouseEvent) => {
+        if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+            closeMenu();
+        }
+    }, [menuRef, closeMenu]);
 
     useEffect(() => {
         if (allowMenuClosing) {
@@ -57,7 +57,7 @@ export default function NavBar({switchLanguage} : Internalization) {
     ];
 
     const subMenuArray = [
-        <section className="bg-black p-2 text-sm">{switchLanguage}</section>,
+        <section key="switch" className="bg-black p-2 text-sm">{switchLanguage}</section>,
         
         <SubMenuButton key={options[1].code} onClick={() => setOption(options[1])}>
             <span className="flex justify-left ">
