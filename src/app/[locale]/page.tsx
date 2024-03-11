@@ -10,11 +10,9 @@ interface Project {
     description: string;
 }
 
-interface HomeProps {
-  context: any; // Define the type for props if needed
-}
 
-export default function Home(props: HomeProps) {
+
+export default function Home() {
   const pIntroStyle = "mb-10";
   //const { locale, locales, defaultLocale } = useRouter();
   //const { title, content } = newsContent["en-US"];
