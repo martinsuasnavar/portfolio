@@ -21,9 +21,12 @@
             "note": "Si el cliente lo requiere, se puede cambiar de Laravel a Node.js (con el framework Express.js)."
          },
          "myProjects": {
-            "0": "Una app parecida a Trello, pero con paneles simplificados y sin necesidad de loguearse. Los datos de usuario son temporalmente guardados en cookies y pueden ser descargados e importados de vuelta en la app.",
-            "1": "Aplicación de chat creada en Laravel la cuál permite la creación de salas y el unirse a ellas. Toma ventaja de usar una base de datos MySQL."
-         }
+            "projectList": {
+                "0": "Una app parecida a Trello, pero con paneles simplificados y sin necesidad de loguearse. Los datos de usuario son temporalmente guardados en cookies y pueden ser descargados e importados de vuelta en la app.",
+                "1": "Aplicación de chat creada en Laravel la cuál permite la creación de salas y el unirse a ellas. Toma ventaja de usar una base de datos MySQL."
+            },
+            "warning": "Este proyecto todavía esta en desarollo, vea su progreso en "
+        }
     },
     "RootLayout": {
         "footer": {
