@@ -6,6 +6,7 @@ import "../globals.css";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import WhiteBox from "../components/white-box";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -43,19 +44,16 @@ export default function RootLayout({
       {children}
       <footer className="bg-black text-white p-10 justify-center ">
         <div className="text-3xl mr-auto ml-auto flex justify-center sm:hidden">
-            {t('footer.contactMe')}
+          <WhiteBox>{t('footer.contactMe')}</WhiteBox>
         </div>
         <div className="flex mr-auto ml-auto justify-center">
          
           
-          {/*warning: responsive design issues, 
-          the following part regarding contact 
-          boxes creates an empty blank space on
-          the right side of the page*/}
+        
           <section className="flex mr-auto ml-auto">
           <section className="w-80 hidden sm:block">
-            <div className="text-sm font-bold sm:text-3xl">
-            {t('footer.contactMe')}
+            <div className="text-sm font-bold sm:text-3xl mb-2">
+            <WhiteBox>{t('footer.contactMe')}</WhiteBox>
             </div>
             <div>
             {t('footer.anyInquiere')}
