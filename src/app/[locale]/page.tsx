@@ -45,23 +45,21 @@ export default function Home() {
         <section className="text-8xl">
             <div className="flex justify-center">
                <div className="p-7 sm:ml-0 sm:p-0 flex">
-               <text className="text-left mt-10 bg-gradient-to-r from-white via-white to-pink-200 inline-block text-transparent bg-clip-text w-80"
+               <text className=" text-left mt-10 bg-gradient-to-r from-white via-white to-pink-200 inline-block text-transparent bg-clip-text w-80"
                >{t("greet")}</text>
-               <div className=" ml-4 text-pink-100 text-3xl text-left">
-               <section>
+               <section className=" text-pink-100 text-3xl text-left">
                   <div className="justify-left flex mt-10 mb-4">
                   <Image src="/dev.png"
                     width={80}
                     height={80}
                     alt="dev picture"/> 
                   </div>
-                  <div className="w-20">
+                  <div>
                     <div>{t("fastPresentation.0")}</div>
                     <div>{t("fastPresentation.1")}</div>
                     <div>{t("fastPresentation.2")}</div>
                   </div>
                </section>
-               </div>
                </div>
             </div>
             
