@@ -6,12 +6,17 @@ import { useState, useRef, useEffect } from "react";
 import SubMenu from "./sub-menu";
 import SubMenuButton from "./buttons/sub-menu-button";
 import { useRouter } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 
 interface Option {
     code: string;
 }
 
-export default function NavBar() {
+interface Internalization {
+    switchLanguage: string;
+}
+
+export default function NavBar({switchLanguage} : Internalization) {
     const [languageMenu, setLanguageMenu] = useState(false);
     const [allowMenuClosing, setAllowMenuClosing] = useState(true);
     const router = useRouter();
@@ -52,8 +57,22 @@ export default function NavBar() {
     ];
 
     const subMenuArray = [
-        <SubMenuButton key={options[1].code} onClick={() => setOption(options[1])}>Español</SubMenuButton>,
-        <SubMenuButton key={options[0].code} onClick={() => setOption(options[0])}>English</SubMenuButton>
+        <section className="bg-black p-2 text-sm">{switchLanguage}</section>,
+        
+        <SubMenuButton key={options[1].code} onClick={() => setOption(options[1])}>
+            <span className="flex justify-left ">
+                <div><Image src="/logos/es.png" height={22} width={22} alt="es lang"/></div>
+                <div className="ml-2">Español</div>
+            </span>
+        </SubMenuButton>,
+        
+        <SubMenuButton key={options[0].code} onClick={() => setOption(options[0])}>
+            <span className="flex justify-left ">
+                <div><Image src="/logos/en.png" height={22} width={22} alt="en lang"/></div>
+                <div className="ml-2">English</div>
+            </span>
+        </SubMenuButton>
+
     ];
 
     return (

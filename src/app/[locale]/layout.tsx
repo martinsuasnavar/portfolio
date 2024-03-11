@@ -1,7 +1,6 @@
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { useRouter } from "next/navigation";
 import NavBar from "@/app/components/nav-bar";
 import "../globals.css";
 import Image from "next/image";
@@ -38,7 +37,8 @@ export default function RootLayout({
      
       <body className={inter.className}>
       
-      <nav><NavBar/></nav>
+      
+      <nav><NavBar switchLanguage={t("navBar.switchLanguage")}/></nav>
       
       {children}
       <footer className="bg-black text-white p-10 justify-center ">

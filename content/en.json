@@ -32,6 +32,9 @@
         "footer": {
             "contactMe": "Contact me",
             "anyInquiere": "For any inquirie you can contact me on any of the following medias ➡️"
+        },
+        "navBar": {
+            "switchLanguage": "Switch language"
         }
     },
     "Mail": {
