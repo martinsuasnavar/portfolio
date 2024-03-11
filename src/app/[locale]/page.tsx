@@ -23,14 +23,14 @@ export default function Home() {
   const project1: Project = {
     imgSrc: "/project-1.png",
     name: "PanelBoard Lite",
-    description: `${t("myProjects.0")}`,
-    warning: " "
+    description: `${t("myProjects.projectList.0")}`,
+    warning: `${t("myProjects.warning")} https://github.com/martinsuasnavar/panelboard-lite`,
   };
   const project2: Project = {
     imgSrc: "/project-2.png",
     name: "Leaf Messenger",
-    description: `${t("myProjects.1")}`,
-    warning: " "
+    description: `${t("myProjects.projectList.1")} TBA`,
+    warning: `${t("myProjects.warning")} https://github.com/martinsuasnavar/leaf-messenger`,
   };
 
   const projectsArray = [project1, project2];
