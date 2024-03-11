@@ -37,13 +37,13 @@ export default function Home() {
 
   return (
 
-    <main className="justify-center bg-gradient-to-r from-black to-indigo-950  text-center justify-center items-center">
+    <main className="flex flex-col w-full min-h-screen  bg-gradient-to-r from-black to-indigo-950  text-center items-center">
         <div className="h-20"/>
       
 
-        <section className="text-8xl  ">
+        <section className="text-8xl">
          
-            <div className="flex text-center justify-center items-center">
+            <div className="hidden sm:flex text-center justify-center items-center">
                 <text className="bg-gradient-to-r from-white via-white to-pink-200 inline-block text-transparent bg-clip-text w-80"
                >{t("greet")}</text>
               <Image src="/dev.png"
