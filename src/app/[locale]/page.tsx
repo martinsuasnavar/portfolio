@@ -47,18 +47,16 @@ export default function Home() {
                <div className="p-7 sm:ml-0 sm:p-0 flex">
                <text className=" text-left mt-10 bg-gradient-to-r from-white via-white to-pink-200 inline-block text-transparent bg-clip-text"
                >{t("greet")}</text>
-               <section className=" text-pink-100 text-3xl text-left">
+               <section className="ml-10 text-pink-100 text-3xl text-left">
                   <div className="justify-left flex mt-10 mb-4">
                   <Image src="/dev.png"
                     width={80}
                     height={80}
                     alt="dev picture"/> 
                   </div>
-                  <div className="ml-4 sm:ml-0 ">
-                    <div>{t("fastPresentation.0")}</div>
-                    <div>{t("fastPresentation.1")}</div>
-                    <div>{t("fastPresentation.2")}</div>
-                  </div>
+                  <div>{t("fastPresentation.0")}</div>
+                  <div>{t("fastPresentation.1")}</div>
+                  <div>{t("fastPresentation.2")}</div>
                </section>
                </div>
             </div>
