@@ -8,6 +8,7 @@ interface Project {
     imgSrc: string;
     name: string;
     description: string;
+    warning: string;
 }
 
 
@@ -22,12 +23,14 @@ export default function Home() {
   const project1: Project = {
     imgSrc: "/project-1.png",
     name: "PanelBoard Lite",
-    description: `${t("myProjects.0")}`
+    description: `${t("myProjects.0")}`,
+    warning: " "
   };
   const project2: Project = {
     imgSrc: "/project-2.png",
     name: "Leaf Messenger",
-    description: `${t("myProjects.1")}`
+    description: `${t("myProjects.1")}`,
+    warning: " "
   };
 
   const projectsArray = [project1, project2];

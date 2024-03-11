@@ -1,4 +1,3 @@
-"use client";
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -7,6 +6,7 @@ import NavBar from "@/app/components/nav-bar";
 import "../globals.css";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,8 +30,9 @@ export default function RootLayout({
   children: React.ReactNode;
   params: {locale: string};
 }) {
+  const t = useTranslations("RootLayout");
 
-  console.log(locale);
+  //console.log(locale);
   return (
     <html lang={locale}>
      
@@ -43,10 +44,10 @@ export default function RootLayout({
       <footer className="p-10 justify-center flex">
         <section className="w-80">
           <div className="text-3xl font-bold">
-          Contact me
+          {t('footer.contactMe')}
           </div>
           <div>
-            For any inquirie you can contact me on any of the following medias ➡️
+          {t('footer.anyInquiere')}
           </div>
         </section>
         

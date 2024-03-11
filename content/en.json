@@ -23,6 +23,21 @@
         "myProjects": {
             "0": "A Trello like app, but with simplified panels and no need to login. User data is temporaly stored in cookies and can be downloaded and imported back into the app.",
             "1": "Chat app created in Laravel with the ability to create and join rooms. Takes advantage of using a MySQL database."
-         }
+        }
+    },
+    "RootLayout": {
+        "footer": {
+            "contactMe": "Contact me",
+            "anyInquiere": "For any inquirie you can contact me on any of the following medias ➡️"
+        }
+    },
+    "Mail": {
+        "form": {
+            "titleCard": "Send me a mail",
+            "email": "Your email",
+            "name": "Your name",
+            "subject": "Subject",
+            "message": "Message"
+        }
     }
 }
