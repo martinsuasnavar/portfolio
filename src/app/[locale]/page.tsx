@@ -50,8 +50,8 @@ export default function Home() {
                <section>
                   <div className="justify-left flex mt-10">
                   <Image src="/dev.png"
-                    width={100}
-                    height={100}
+                    width={80}
+                    height={80}
                     alt="dev picture"/> 
                   </div>
                   <div>I am Martin,</div>
