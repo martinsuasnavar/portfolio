@@ -55,9 +55,11 @@ export default function Home() {
                     height={80}
                     alt="dev picture"/> 
                   </div>
-                  <div>{t("fastPresentation.0")}</div>
-                  <div>{t("fastPresentation.1")}</div>
-                  <div>{t("fastPresentation.2")}</div>
+                  <div className="w-20">
+                    <div>{t("fastPresentation.0")}</div>
+                    <div>{t("fastPresentation.1")}</div>
+                    <div>{t("fastPresentation.2")}</div>
+                  </div>
                </section>
                </div>
                </div>
