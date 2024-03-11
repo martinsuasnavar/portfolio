@@ -43,13 +43,17 @@ export default function Home() {
 
         <section className="text-8xl">
          
-            <div className="hidden sm:flex text-center justify-center items-center">
-                <text className="bg-gradient-to-r from-white via-white to-pink-200 inline-block text-transparent bg-clip-text w-80"
+            <div className=" block sm:flex text-center justify-center items-center">
+                <text className="hidden sm:block bg-gradient-to-r from-white via-white to-pink-200 inline-block text-transparent bg-clip-text w-80"
                >{t("greet")}</text>
-              <Image src="/dev.png"
-              width={200}
-              height={200}
-              alt="dev picture"/>
+               <div className="ml-10 p-7 sm:ml-0 sm:p-0">
+                <Image src="/dev.png"
+                width={200}
+                height={200}
+                alt="dev picture"/>
+              </div>
+               <text className="block sm:hidden bg-gradient-to-r from-white via-white to-pink-200 inline-block text-transparent bg-clip-text w-80"
+               >{t("greet")}</text>
             </div>
             
          </section>
