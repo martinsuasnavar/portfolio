@@ -57,7 +57,7 @@ export default function NavBar({switchLanguage} : Internalization) {
     ];
 
     const subMenuArray = [
-        <section key="switch" className="text-white bg-black p-2 text-sm">{switchLanguage}</section>,
+        <section key="switch" className=" text-white bg-black p-2 text-sm">{switchLanguage}</section>,
         
         <SubMenuButton key={options[1].code} onClick={() => setOption(options[1])}>
             <span className="flex justify-left ">
@@ -76,8 +76,8 @@ export default function NavBar({switchLanguage} : Internalization) {
     ];
 
     return (
-        <div className="">
-            <nav className="max-w-full fixed top-0 left-0 w-full">
+        <div >
+            <nav style={{zIndex: "50"}} className="max-w-full fixed top-0 left-0 w-full">
                 <div className="p-2 bg-gradient-to-r from-indigo-950 to-pink-900">
                     <a  href="/"><WhiteBox >suasnavar.dev</WhiteBox></a>
                     <button onClick={toggleLanguageMenu} className="float-right transition-transform duration-300 transform hover:scale-105">

@@ -52,7 +52,7 @@ export default function Home() {
                >{t("greet")}</text>
                <section className="ml-10 text-pink-100 text-3xl text-left">
                   <div className="justify-left flex mt-10 mb-4 ">
-                  <div className=" transition-transform duration-300 transform hover:scale-105">
+                  <div className="z-99 transition-transform duration-300 transform hover:scale-105">
                   <Image src="/dev.png"
                     width={80}
                     height={80}
@@ -138,7 +138,7 @@ export default function Home() {
                     <p>{project.description}</p>
                     <br/>
                     <div className="text-yellow-500">⚠ {project.warning} </div>
-                    <a href={project.link} className="mt-10 bg-indigo-900 hover:bg-indigo-800 rounded p-2">Ver en GitHub</a>
+                    <a href={project.link} className="mt-10 bg-indigo-900 hover:bg-indigo-800 rounded p-2">{t("myProjects.viewButton")}</a>
                 </div>
             ))}
         </div>
