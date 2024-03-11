@@ -44,7 +44,7 @@ export default function RootLayout({
       {children}
       <footer className="bg-black text-white p-10 justify-center ">
         <div className="text-3xl mr-auto ml-auto flex justify-center sm:hidden">
-          <WhiteBox>{t('footer.contactMe')}</WhiteBox>
+          {t('footer.contactMe')}
         </div>
         <div className="flex mr-auto ml-auto justify-center">
          
