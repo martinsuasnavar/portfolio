@@ -34,14 +34,14 @@ export default function RootLayout({
 
   //console.log(locale);
   return (
-    <html lang={locale}>
+    <html lang={locale} className="dark">
      
       <body className={inter.className}>
       
       <nav><NavBar/></nav>
       
       {children}
-      <footer className="p-10 justify-center ">
+      <footer className="bg-black text-white p-10 justify-center ">
         <div className="text-3xl mr-auto ml-auto flex justify-center sm:hidden">
             {t('footer.contactMe')}
         </div>

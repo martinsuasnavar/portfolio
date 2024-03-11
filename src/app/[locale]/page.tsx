@@ -14,7 +14,7 @@ interface Project {
 
 
 export default function Home() {
-  const pIntroStyle = "mb-10";
+  const pIntroStyle = "mb-10 text-white";
   //const { locale, locales, defaultLocale } = useRouter();
   //const { title, content } = newsContent["en-US"];
   const t = useTranslations("Home");
@@ -37,7 +37,7 @@ export default function Home() {
 
   return (
 
-    <main className="flex flex-col w-full min-h-screen  bg-gradient-to-r from-black to-indigo-950  text-center items-center">
+    <main className="flex flex-col w-full min-h-screen bg-gradient-to-r from-black to-indigo-950 text-center items-center text-white">
         <div className="h-20"/>
       
 
