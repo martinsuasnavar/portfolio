@@ -49,7 +49,7 @@ export default function NavBar({switchLanguage} : Internalization) {
                 document.removeEventListener("mousedown", handleClickOutside);
             };
         }
-    }, [allowMenuClosing]);
+    }, [allowMenuClosing, handleClickOutside]);
 
     const options: Option[] = [
         { code: "en" },
