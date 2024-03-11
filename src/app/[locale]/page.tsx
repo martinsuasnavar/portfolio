@@ -29,7 +29,7 @@ export default function Home() {
   const project2: Project = {
     imgSrc: "/project-2.png",
     name: "Leaf Messenger",
-    description: `${t("myProjects.projectList.1")} TBA`,
+    description: `${t("myProjects.projectList.1")}`,
     warning: `${t("myProjects.warning")} https://github.com/martinsuasnavar/leaf-messenger`,
   };
 
@@ -84,7 +84,7 @@ export default function Home() {
           </p>
           <ul>
             <li>• <strong>React.js/Next.js</strong>, {t("techDetails.stackDescs.0")}</li>
-            <li>• <strong>Laravel</strong>, {t("techDetails.stackDescs.1")}</li>
+            <li>• <strong>PHP/Laravel</strong>, {t("techDetails.stackDescs.1")}</li>
             <li>• <strong>mySQL</strong>, {t("techDetails.stackDescs.2")}</li>
           </ul>
           <br/>
@@ -108,6 +108,8 @@ export default function Home() {
                     <Image src={project.imgSrc} height={400} width={400} alt={`${project.name} logo`}/>
                     <div className="h-10"/>
                     <p>{project.description}</p>
+                    <br/>
+                    <div className="text-yellow-500">⚠ {project.warning}</div>
                 </div>
             ))}
         </div>
