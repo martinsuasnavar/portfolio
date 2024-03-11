@@ -1,6 +1,11 @@
 {
     "Home": {
         "greet": "¡Hola!",
+        "fastPresentation": {
+            "0": "Soy Martín,",
+            "1": "un dev",
+            "2": "full stack"
+        },
         "presentationCards": {
             "intro": "Una breve intro...",
             "techdetails": "Detalles técnicos",

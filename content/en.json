@@ -1,6 +1,11 @@
 {
     "Home": {
         "greet": "Hello there!",
+        "fastPresentation": {
+            "0": "I am Martin,",
+            "1": "a full stack",
+            "2": "dev"
+        },
         "presentationCards": {
             "intro": "A brief intro...",
             "techdetails": "Technical details",

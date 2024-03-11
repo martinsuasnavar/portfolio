@@ -48,15 +48,15 @@ export default function Home() {
                >{t("greet")}</text>
                <div className="mt-7 ml-4 text-pink-100 text-3xl text-left">
                <section>
-                  <div className="justify-left flex mt-10">
+                  <div className="justify-left flex mt-10 mb-4">
                   <Image src="/dev.png"
                     width={80}
                     height={80}
                     alt="dev picture"/> 
                   </div>
-                  <div>I am Martin,</div>
-                  <div>a full stack</div>
-                  <div>dev</div>
+                  <div>{t("fastPresentation.0")}</div>
+                  <div>{t("fastPresentation.1")}</div>
+                  <div>{t("fastPresentation.2")}</div>
                </section>
                </div>
                </div>
