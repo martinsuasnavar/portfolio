@@ -45,7 +45,7 @@ export default function Home() {
         <section className="text-8xl">
             <div className="flex justify-center">
                <div className="p-7 sm:ml-0 sm:p-0 flex">
-               <text className=" text-left mt-10 bg-gradient-to-r from-white via-white to-pink-200 inline-block text-transparent bg-clip-text w-80"
+               <text className=" text-left mt-10 bg-gradient-to-r from-white via-white to-pink-200 inline-block text-transparent bg-clip-text"
                >{t("greet")}</text>
                <section className=" text-pink-100 text-3xl text-left">
                   <div className="justify-left flex mt-10 mb-4">
