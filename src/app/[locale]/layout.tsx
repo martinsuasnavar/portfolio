@@ -45,7 +45,14 @@ export default function RootLayout({
         <div className="text-3xl mr-auto ml-auto flex justify-center sm:hidden">
             {t('footer.contactMe')}
         </div>
-        <div className="flex ">
+        <div className="flex mr-auto ml-auto justify-center">
+         
+          
+          {/*warning: responsive design issues, 
+          the following part regarding contact 
+          boxes creates an empty blank space on
+          the right side of the page*/}
+          <section className="flex mr-auto ml-auto">
           <section className="w-80 hidden sm:block">
             <div className="text-sm font-bold sm:text-3xl">
             {t('footer.contactMe')}
@@ -54,13 +61,6 @@ export default function RootLayout({
             {t('footer.anyInquiere')}
             </div>
           </section>
-          
-          {/*warning: responsive design issues, 
-          the following part regarding contact 
-          boxes creates an empty blank space on
-          the right side of the page*/}
-          <section className="flex mr-auto ml-auto">
-
               <a href="https://github.com/martinsuasnavar" className={contactBox}>
                 <sub className={cBoxContent}>
                   <Image src="/logos/github-white.png" height={50} width={50} alt="github logo" />
