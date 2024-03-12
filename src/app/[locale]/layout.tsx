@@ -39,7 +39,7 @@ export default function RootLayout({
       <body className={inter.className}>
       
       
-      <nav><NavBar switchLanguage={t("navBar.switchLanguage")}/></nav>
+      <nav><NavBar switchLanguage={t("navBar.switchLanguage")} localePicture={t("navBar.localePicture")}/></nav>
       
       {children}
       <footer className="bg-black text-white p-10 justify-center ">

@@ -40,7 +40,8 @@
             "anyInquiere": "For any inquirie you can contact me on any of the following medias ➡️"
         },
         "navBar": {
-            "switchLanguage": "Switch language"
+            "switchLanguage": "Switch language",
+            "localePicture": "/logos/en.png"
         }
     },
     "Mail": {

@@ -14,9 +14,10 @@ interface Option {
 
 interface Internalization {
     switchLanguage: string;
+    localePicture: string;
 }
 
-export default function NavBar({switchLanguage} : Internalization) {
+export default function NavBar({switchLanguage, localePicture} : Internalization) {
     const [languageMenu, setLanguageMenu] = useState(false);
     const [allowMenuClosing, setAllowMenuClosing] = useState(true);
     const router = useRouter();
@@ -25,7 +26,7 @@ export default function NavBar({switchLanguage} : Internalization) {
     const toggleLanguageMenu = () => {
         setLanguageMenu(prevState => !prevState);
     };
-    
+
     const closeMenu = () => {
         setLanguageMenu(false);
     };
@@ -79,9 +80,9 @@ export default function NavBar({switchLanguage} : Internalization) {
             <nav style={{zIndex: "50"}} className="max-w-full fixed top-0 left-0 w-full">
                 <div className="p-2 bg-gradient-to-r from-indigo-950 to-pink-900">
                     <a  href="/"><WhiteBox >suasnavar.dev</WhiteBox></a>
-                    <button onClick={toggleLanguageMenu} className="float-right transition-transform duration-300 transform hover:scale-105">
+                    <button onClick={toggleLanguageMenu} className="p-0.5 rounded-full bg-white float-right transition-transform duration-300 transform hover:scale-105">
                         <Image
-                            src="/language.png"
+                            src={localePicture}
                             height={30}
                             width={30}
                             alt="language-switcher"
