@@ -23,17 +23,16 @@ export default function NavBar({switchLanguage} : Internalization) {
     const menuRef = useRef<HTMLDivElement>(null);
 
     const toggleLanguageMenu = () => {
-        setLanguageMenu(!languageMenu);
+        setLanguageMenu(prevState => !prevState);
     };
-
+    
     const closeMenu = () => {
         setLanguageMenu(false);
     };
 
     const setOption = async (option: Option) => {
-        setAllowMenuClosing(false);
         await router.push(`/${option.code}`);
-        setAllowMenuClosing(true);
+        closeMenu();
     };
 
     const handleClickOutside = useCallback((event: MouseEvent) => {
