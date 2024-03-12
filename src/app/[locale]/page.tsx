@@ -45,7 +45,7 @@ export default function Home() {
         <div className="h-20"/>
       
 
-        <section className="text-8xl sm:text-9xl">
+        <section className="text-7xl sm:text-9xl">
             <div className="flex justify-center">
                <div className="p-7 sm:ml-0 sm:p-0 flex">
                <text className=" text-left mt-10 bg-gradient-to-r from-white via-white to-pink-200 inline-block text-transparent bg-clip-text"
