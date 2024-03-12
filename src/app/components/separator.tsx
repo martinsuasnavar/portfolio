@@ -6,7 +6,7 @@ interface SeparatorProps{
 }
 
 export default function Separator({topMargin, bottomMargin}: SeparatorProps) {
-    const separatorStyle = "w-20 h-0.5 bg-white m-2";
+    const separatorStyle = "w-20 h-0.5 bg-white/10 m-2";
 
     return (
     <main>

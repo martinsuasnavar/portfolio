@@ -35,7 +35,9 @@ export default function RootLayout({
   //console.log(locale);
   return (
     <html lang={locale} className="dark">
-     
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body className={inter.className}>
       
       
