@@ -147,7 +147,7 @@ export default function Home() {
                         <div className="text-yellow-500">⚠ {project.warning} </div>
                       }
                       {project.info.length > 0 && 
-                         <div className="text-blue-500">🛈 {project.info} </div>
+                         <div className="text-blue-500">ⓘ {project.info} </div>
                       }
                       {project.app.length > 0 && 
                         <a href={project.app} className="mt-10 bg-blue-900 hover:bg-blue-800 rounded p-2">{t("myProjects.testIt")}</a>
