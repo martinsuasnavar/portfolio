@@ -31,6 +31,7 @@
                 "1": "Aplicación de chat creada en Laravel la cuál permite la creación de salas y el unirse a ellas. Toma ventaja de usar una base de datos MySQL."
             },
             "warning": "Este proyecto todavía esta en desarrollo, vea su progreso en GitHub",
+            "optimization": "Este proyecto todavía necesita mejoras, tengalo en cuenta si encuentra problemas",
             "viewButton": "Ver en GitHub",
             "testIt": "¡Pruébalo!"
         }

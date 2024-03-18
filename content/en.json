@@ -31,6 +31,7 @@
                 "1": "Chat app created in Laravel with the ability to create and join rooms. Takes advantage of using a MySQL database."
             },
             "warning": "This project is still in development, check its progress in GitHub",
+            "optimization": "This project still needs fixes, be aware of it if you encounter issues",
             "viewButton": "View on GitHub",
             "testIt": "Test it!"
         }

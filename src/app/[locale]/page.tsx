@@ -2,32 +2,30 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import Separator from "../components/separator";
 import WhiteBox from "@/app/components/white-box";
-import { useRouter } from "next/navigation";
 
 interface Project {
     imgSrc: string;
     name: string;
     description: string;
     warning: string;
+    info: string;
     git: string;
     app: string;
 }
 
-
-
 export default function Home() {
   const pIntroStyle = "mb-10 text-white";
   const presentationCardStyle = "text-2xl";
-  //const { locale, locales, defaultLocale } = useRouter();
-  //const { title, content } = newsContent["en-US"];
+  //  Use transaltions from Home section
   const t = useTranslations("Home");
-  // Extract the navigation object keys from the translations
 
+  
   const project1: Project = {
     imgSrc: "/project-1.png",
     name: "PanelBoard Lite",
     description: `${t("myProjects.projectList.0")}`,
     warning: "",
+    info: `${t("myProjects.optimization")}`,
     git: "https://github.com/martinsuasnavar/panelboard-lite",
     app: "https://panelboard-lite.vercel.app"
   };
@@ -36,10 +34,13 @@ export default function Home() {
     name: "Leaf Messenger",
     description: `${t("myProjects.projectList.1")}`,
     warning: `${t("myProjects.warning")}`,
+    info: ``,
     git: "https://github.com/martinsuasnavar/leaf-messenger",
     app: ""
   };
-
+  // Respectly warning and app props, leave them blank to indicate they should not appear  
+  
+  
   const projectsArray = [project1, project2];
 
   return (
@@ -130,7 +131,7 @@ export default function Home() {
 
 
           <div className={presentationCardStyle}>
-          <WhiteBox>{t("presentationCards.myProjects")}</WhiteBox>
+            <WhiteBox>{t("presentationCards.myProjects")}</WhiteBox>
           </div>
 
 
@@ -141,8 +142,12 @@ export default function Home() {
                       <div className="h-10"/>
                       <p>{project.description}</p>
                       <br/>
+                      
                       {project.warning.length > 0 && 
                         <div className="text-yellow-500">⚠ {project.warning} </div>
+                      }
+                      {project.info.length > 0 && 
+                         <div className="text-blue-500">🛈 {project.info} </div>
                       }
                       {project.app.length > 0 && 
                         <a href={project.app} className="mt-10 bg-blue-900 hover:bg-blue-800 rounded p-2">{t("myProjects.testIt")}</a>
