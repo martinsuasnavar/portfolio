@@ -79,7 +79,7 @@ export default function NavBar({switchLanguage, localePicture} : Internalization
         <div >
             <nav style={{zIndex: "50"}} className="max-w-full fixed top-0 left-0 w-full">
                 <div className="p-2 bg-gradient-to-r from-indigo-950 to-pink-900">
-                    <a className="text-xs" href="/"><WhiteBox >suasnavar.dev</WhiteBox></a>
+                    <a className="text-xs transition-transform duration-300 transform hover:scale-105" href="/"><WhiteBox >suasnavar.dev</WhiteBox></a>
                     <button onClick={toggleLanguageMenu} className="p-0.5 rounded-full bg-white float-right transition-transform duration-300 transform hover:scale-105">
                         <Image
                             src={localePicture}

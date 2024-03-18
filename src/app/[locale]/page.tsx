@@ -9,7 +9,8 @@ interface Project {
     name: string;
     description: string;
     warning: string;
-    link: string;
+    git: string;
+    app: string;
 }
 
 
@@ -26,15 +27,17 @@ export default function Home() {
     imgSrc: "/project-1.png",
     name: "PanelBoard Lite",
     description: `${t("myProjects.projectList.0")}`,
-    warning: `${t("myProjects.warning")}`,
-    link: "https://github.com/martinsuasnavar/panelboard-lite"
+    warning: "",
+    git: "https://github.com/martinsuasnavar/panelboard-lite",
+    app: "https://panelboard-lite.vercel.app"
   };
   const project2: Project = {
     imgSrc: "/project-2.png",
     name: "Leaf Messenger",
     description: `${t("myProjects.projectList.1")}`,
     warning: `${t("myProjects.warning")}`,
-    link: "https://github.com/martinsuasnavar/leaf-messenger"
+    git: "https://github.com/martinsuasnavar/leaf-messenger",
+    app: ""
   };
 
   const projectsArray = [project1, project2];
@@ -46,25 +49,25 @@ export default function Home() {
       
 
         <section className="text-7xl sm:text-9xl">
-            <div className="flex justify-center">
+            <article className="flex justify-center">
                <div className="p-7 sm:ml-0 sm:p-0 flex">
                <text className=" text-left mt-10 bg-gradient-to-r from-white via-white to-pink-200 inline-block text-transparent bg-clip-text"
                >{t("greet")}</text>
-               <section className="ml-10 text-pink-100 text-3xl text-left">
-                  <div className="justify-left flex mt-10 mb-4 ">
-                  <div className="z-99 transition-transform duration-300 transform hover:scale-105">
-                  <Image src="/dev.png"
-                    width={180}
-                    height={180}
-                    alt="dev picture"/> 
-                  </div>
-                  </div>
-                  <div>{t("fastPresentation.0")}</div>
-                  <div>{t("fastPresentation.1")}</div>
-                  <div>{t("fastPresentation.2")}</div>
-               </section>
+                <div className="ml-10 text-pink-100 text-3xl text-left">
+                    <div className="justify-left flex mt-10 mb-4 ">
+                      <div className="z-99 transition-transform duration-300 transform hover:scale-105">
+                        <Image src="/dev.png"
+                          width={180}
+                          height={180}
+                          alt="dev picture"/> 
+                      </div>
+                    </div>
+                    <div>{t("fastPresentation.0")}</div>
+                    <div>{t("fastPresentation.1")}</div>
+                    <div>{t("fastPresentation.2")}</div>
+                </div>
                </div>
-            </div>
+            </article>
             
          </section>
 
@@ -79,41 +82,42 @@ export default function Home() {
             <WhiteBox>{t("presentationCards.intro")}  </WhiteBox>
           </div>
 
-          <div >
+          <article>
       
-          <div className={pIntroStyle}/>
-          <p className={pIntroStyle}>
-       
-          </p>
-          <p className={pIntroStyle}>
-            {t("introParagraphs.1")}
-          </p>
-          <p className={pIntroStyle}>
-            {t("introParagraphs.2")}
-          </p>
+            <div className={pIntroStyle}/>
+            <p className={pIntroStyle}>
+        
+            </p>
+            <p className={pIntroStyle}>
+              {t("introParagraphs.1")}
+            </p>
+            <p className={pIntroStyle}>
+              {t("introParagraphs.2")}
+            </p>
 
-          <div className="h-10"/>
-
-
-          <div className={presentationCardStyle}>
-            <WhiteBox>{t("presentationCards.techdetails")}</WhiteBox>
-          </div>
+            <div className="h-10"/>
 
 
-          <div className="h-10"/>
-          <p className={pIntroStyle}>
-          {t("techDetails.favStack")}
-          </p>
-          <ul>
-            <li>• <strong>React.js/Next.js</strong>, {t("techDetails.stackDescs.0")}</li>
-            <li>• <strong>PHP/Laravel</strong>, {t("techDetails.stackDescs.1")}</li>
-            <li>• <strong>mySQL</strong>, {t("techDetails.stackDescs.2")}</li>
-          </ul>
-          <br/>
-          <p className={pIntroStyle}>
-          {t("techDetails.note")}
-          </p>
-          </div>
+            <div className={presentationCardStyle}>
+              <WhiteBox>{t("presentationCards.techdetails")}</WhiteBox>
+            </div>
+
+
+            <div className="h-10"/>
+            <p className={pIntroStyle}>
+            {t("techDetails.favStack")}
+            </p>
+            <ul>
+              <li>• <strong>React.js/Next.js</strong>, {t("techDetails.stackDescs.0")}</li>
+              <li>• <strong>PHP/Laravel</strong>, {t("techDetails.stackDescs.1")}</li>
+              <li>• <strong>mySQL</strong>, {t("techDetails.stackDescs.2")}</li>
+            </ul>
+            <br/>
+            <div className={pIntroStyle}>
+              {t("techDetails.note")}
+            </div>
+
+          </article>
         
 
       
@@ -125,24 +129,29 @@ export default function Home() {
         <section className="m-20">
 
 
-        <div className={presentationCardStyle}>
-        <WhiteBox>{t("presentationCards.myProjects")}</WhiteBox>
-        </div>
+          <div className={presentationCardStyle}>
+          <WhiteBox>{t("presentationCards.myProjects")}</WhiteBox>
+          </div>
 
 
-        <div className="w-3/6 m-20 w-3/4 ml-auto mr-auto">
-            {projectsArray.map(project => (
-                <div key={project.name} className="flex flex-col items-center mb-40">
-                    <Image src={project.imgSrc} height={400} width={400} alt={`${project.name} logo`}/>
-                    <div className="h-10"/>
-                    <p>{project.description}</p>
-                    <br/>
-                    <div className="text-yellow-500">⚠ {project.warning} </div>
-                    <a href={project.link} className="mt-10 bg-indigo-900 hover:bg-indigo-800 rounded p-2">{t("myProjects.viewButton")}</a>
-                </div>
-            ))}
-        </div>
-        
+          <article className="w-3/6 m-20 w-3/4 ml-auto mr-auto">
+              {projectsArray.map(project => (
+                  <div key={project.name} className="flex flex-col items-center mb-40">
+                      <Image src={project.imgSrc} height={400} width={400} alt={`${project.name} logo`}/>
+                      <div className="h-10"/>
+                      <p>{project.description}</p>
+                      <br/>
+                      {project.warning.length > 0 && 
+                        <div className="text-yellow-500">⚠ {project.warning} </div>
+                      }
+                      {project.app.length > 0 && 
+                        <a href={project.app} className="mt-10 bg-blue-900 hover:bg-blue-800 rounded p-2">{t("myProjects.testIt")}</a>
+                      }
+                      <a href={project.git} className="mt-10 bg-indigo-900 hover:bg-indigo-800 rounded p-2">{t("myProjects.viewButton")}</a>
+                  </div>
+              ))}
+          </article>
+          
         </section>
         
         <div className="h-10"/>
