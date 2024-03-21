@@ -146,24 +146,23 @@ export default function Home() {
           <article className="w-3/6 m-20 w-3/4 ml-auto mr-auto">
               {projectsArray.map(project => (
                 <div>
-                   <FadingSection subfix={'0'}>
+                    <FadingSection subfix={'0'}>
                   <div key={project.name} className="flex flex-col items-center mb-40">
                    
-                      <Image src={project.imgSrc} height={400} width={400} alt={`${project.name} logo`}/>
-                      <div className="h-10"/>
-                      <p>{project.description}</p>
-                      <br/>
-                      
-                      {project.warning.length > 0 && 
-                        <div className="text-yellow-500">⚠ {project.warning} </div>
-                      }
-                      {project.info.length > 0 && 
-                         <div className="text-blue-500">ⓘ {project.info} </div>
-                      }
-                      {project.app.length > 0 && 
-                        <a href={project.app} className="mt-10 bg-blue-900 hover:bg-blue-800 rounded p-2">{t("myProjects.testIt")}</a>
-                      }
-                      <a href={project.git} className="mt-10 bg-indigo-900 hover:bg-indigo-800 rounded p-2">{t("myProjects.viewButton")}</a>
+                        <Image src={project.imgSrc} height={400} width={400} alt={`${project.name} logo`}/>
+                        <div className="h-10"/>
+                        <p>{project.description}</p>
+                        <br/>
+                        {project.warning.length > 0 && 
+                          <div className="text-yellow-500">⚠ {project.warning} </div>
+                        }
+                        {project.info.length > 0 && 
+                          <div className="text-blue-500">ⓘ {project.info} </div>
+                        }
+                        {project.app.length > 0 && 
+                          <a href={project.app} className="mt-10 bg-blue-900 hover:bg-blue-800 rounded p-2">{t("myProjects.testIt")}</a>
+                        }
+                        <a href={project.git} className="mt-10 bg-indigo-900 hover:bg-indigo-800 rounded p-2">{t("myProjects.viewButton")}</a>
                       
                     </div>
                     </FadingSection>
