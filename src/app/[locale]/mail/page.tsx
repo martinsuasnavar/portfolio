@@ -1,5 +1,3 @@
-"use server"
-
 import { useTranslations } from "next-intl";
 import Form from "./form";
 
