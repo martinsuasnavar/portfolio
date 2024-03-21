@@ -1,7 +1,10 @@
+
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import Separator from "../components/separator";
 import WhiteBox from "@/app/components/white-box";
+import FadingSection from "../components/fading-section";
+import './page.css'; // Importing custom CSS file
 
 interface Project {
     imgSrc: string;
@@ -14,64 +17,66 @@ interface Project {
 }
 
 export default function Home() {
+ 
   const pIntroStyle = "mb-10 text-white";
   const presentationCardStyle = "text-2xl";
-  //  Use transaltions from Home section
+  // Use translations from Home section
   const t = useTranslations("Home");
 
-  
-  const project1: Project = {
-    imgSrc: "/project-1.png",
-    name: "PanelBoard Lite",
-    description: `${t("myProjects.projectList.0")}`,
-    warning: "",
-    info: `${t("myProjects.optimization")}`,
-    git: "https://github.com/martinsuasnavar/panelboard-lite",
-    app: "https://panelboard-lite.vercel.app"
-  };
-  const project2: Project = {
-    imgSrc: "/project-2.png",
-    name: "Leaf Messenger",
-    description: `${t("myProjects.projectList.1")}`,
-    warning: `${t("myProjects.warning")}`,
-    info: ``,
-    git: "https://github.com/martinsuasnavar/leaf-messenger",
-    app: ""
-  };
-  // Respectly warning and app props, leave them blank to indicate they should not appear  
-  
-  
-  const projectsArray = [project1, project2];
+
+  const projectsArray: Project[] = [
+    {
+      imgSrc: "/project-1.png",
+      name: "PanelBoard Lite",
+      description: `${t("myProjects.projectList.0")}`,
+      warning: "",
+      info: `${t("myProjects.optimization")}`,
+      git: "https://github.com/martinsuasnavar/panelboard-lite",
+      app: "https://panelboard-lite.vercel.app"
+    },
+    {
+      imgSrc: "/project-2.png",
+      name: "Leaf Messenger",
+      description: `${t("myProjects.projectList.1")}`,
+      warning: `${t("myProjects.warning")}`,
+      info: ``,
+      git: "https://github.com/martinsuasnavar/leaf-messenger",
+      app: ""
+    }
+  ];
 
   return (
-
     <main className="flex flex-col w-full min-h-screen bg-gradient-to-r from-black to-indigo-950 text-center items-center text-white">
-        <div className="h-20"/>
-      
+      <div className="h-20"/>
 
-        <section className="text-7xl sm:text-9xl">
-            <article className="flex justify-center">
-               <div className="p-7 sm:ml-0 sm:p-0 flex">
-               <text className=" text-left mt-10 bg-gradient-to-r from-white via-white to-pink-200 inline-block text-transparent bg-clip-text"
-               >{t("greet")}</text>
-                <div className="ml-10 text-pink-100 text-3xl text-left">
-                    <div className="justify-left flex mt-10 mb-4 ">
-                      <div className="z-99 transition-transform duration-300 transform hover:scale-105">
-                        <Image src="/dev.png"
-                          width={180}
-                          height={180}
-                          alt="dev picture"/> 
-                      </div>
-                    </div>
-                    <div>{t("fastPresentation.0")}</div>
-                    <div>{t("fastPresentation.1")}</div>
-                    <div>{t("fastPresentation.2")}</div>
+
+
+      <section
+        className={"text-7xl sm:text-9xl"}
+      >
+        <article className="flex justify-center">
+          <div className="p-7 sm:ml-0 sm:p-0 flex">
+            <text className=" text-left mt-10 bg-gradient-to-r from-white via-white to-pink-200 inline-block text-transparent bg-clip-text">
+              {t("greet")}
+            </text>
+            <div className="ml-10 text-pink-100 text-3xl text-left">
+              <div className="justify-left flex mt-10 mb-4 ">
+                <div className="z-99 transition-transform duration-300 transform hover:scale-105">
+                  <Image
+                    src="/dev.png"
+                    width={180}
+                    height={180}
+                    alt="dev picture"
+                  />
                 </div>
-               </div>
-            </article>
-            
-         </section>
-
+              </div>
+              <div>{t("fastPresentation.0")}</div>
+              <div>{t("fastPresentation.1")}</div>
+              <div>{t("fastPresentation.2")}</div>
+            </div>
+          </div>
+        </article>
+      </section>
 
 
         <Separator topMargin="20" bottomMargin="5"/>
@@ -83,8 +88,10 @@ export default function Home() {
             <WhiteBox>{t("presentationCards.intro")}  </WhiteBox>
           </div>
 
+         
+
           <article>
-      
+            <FadingSection>
             <div className={pIntroStyle}/>
             <p className={pIntroStyle}>
         
@@ -98,12 +105,13 @@ export default function Home() {
 
             <div className="h-10"/>
 
-
+            </FadingSection>
             <div className={presentationCardStyle}>
               <WhiteBox>{t("presentationCards.techdetails")}</WhiteBox>
             </div>
+        
 
-
+            <FadingSection>
             <div className="h-10"/>
             <p className={pIntroStyle}>
             {t("techDetails.favStack")}
@@ -117,9 +125,9 @@ export default function Home() {
             <div className={pIntroStyle}>
               {t("techDetails.note")}
             </div>
-
+          </FadingSection>
           </article>
-        
+         
 
       
 
@@ -137,7 +145,10 @@ export default function Home() {
 
           <article className="w-3/6 m-20 w-3/4 ml-auto mr-auto">
               {projectsArray.map(project => (
+                <div>
+                   <FadingSection>
                   <div key={project.name} className="flex flex-col items-center mb-40">
+                   
                       <Image src={project.imgSrc} height={400} width={400} alt={`${project.name} logo`}/>
                       <div className="h-10"/>
                       <p>{project.description}</p>
@@ -153,10 +164,13 @@ export default function Home() {
                         <a href={project.app} className="mt-10 bg-blue-900 hover:bg-blue-800 rounded p-2">{t("myProjects.testIt")}</a>
                       }
                       <a href={project.git} className="mt-10 bg-indigo-900 hover:bg-indigo-800 rounded p-2">{t("myProjects.viewButton")}</a>
+                      
+                    </div>
+                    </FadingSection>
                   </div>
               ))}
           </article>
-          
+
         </section>
         
         <div className="h-10"/>

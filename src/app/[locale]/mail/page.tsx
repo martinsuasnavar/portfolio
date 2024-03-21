@@ -1,3 +1,5 @@
+"use server"
+
 import { useTranslations } from "next-intl";
 import Form from "./form";
 
@@ -6,7 +8,7 @@ export default function MailForm() {
 
     return(
         <div>
-            <Form 
+            <Form
                 titleCard={t('form.titleCard')} 
                 email={t('form.email')} 
                 name={t('form.name')} 
