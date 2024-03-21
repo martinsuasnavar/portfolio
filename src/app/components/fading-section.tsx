@@ -6,9 +6,10 @@ import "./fading-section.css";
 
 interface FadingSectionProps {
     children: ReactNode;
+    subfix: string;
 }
 
-export default function FadingSection({ children }: FadingSectionProps) {
+export default function FadingSection({ children, subfix }: FadingSectionProps) {
     const [isVisible, setVisible] = useState(false);
     const domRef = useRef<HTMLDivElement>(null); // Specify the type of domRef
 
@@ -32,7 +33,7 @@ export default function FadingSection({ children }: FadingSectionProps) {
 
     return (
         <section
-            className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
+            className={`fade-in-section-${subfix} ${isVisible ? 'is-visible' : ''}`}
             ref={domRef}
         >
             {children}

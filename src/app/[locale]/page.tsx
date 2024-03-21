@@ -91,7 +91,7 @@ export default function Home() {
          
 
           <article>
-            <FadingSection>
+            <FadingSection subfix={'0'}>
             <div className={pIntroStyle}/>
             <p className={pIntroStyle}>
         
@@ -111,7 +111,7 @@ export default function Home() {
             </div>
         
 
-            <FadingSection>
+            <FadingSection subfix={'0'}>
             <div className="h-10"/>
             <p className={pIntroStyle}>
             {t("techDetails.favStack")}
@@ -146,7 +146,7 @@ export default function Home() {
           <article className="w-3/6 m-20 w-3/4 ml-auto mr-auto">
               {projectsArray.map(project => (
                 <div>
-                   <FadingSection>
+                   <FadingSection subfix={'0'}>
                   <div key={project.name} className="flex flex-col items-center mb-40">
                    
                       <Image src={project.imgSrc} height={400} width={400} alt={`${project.name} logo`}/>
