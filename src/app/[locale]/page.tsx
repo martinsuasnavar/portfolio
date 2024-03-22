@@ -168,12 +168,12 @@ export default function Home() {
                         <div className="block">
                           {project.app.length > 0 && 
                             <div className="transition-transform duration-300 transform hover:scale-105">
-                              <a href={project.app} className="  mt-10 bg-blue-900 hover:bg-blue-800 rounded p-2">{t("myProjects.testIt")}</a>
+                              <a href={project.app} className="mt-10 bg-blue-900 hover:bg-blue-800 rounded p-2">{t("myProjects.testIt")}</a>
                             </div>
                           }
                           <div className="h-10"/>
                           <div className="transition-transform duration-300 transform hover:scale-105">
-                            <a href={project.git} className="mt-10 bg-indigo-900 hover:bg-indigo-800 rounded p-2 transition-transform duration-300 transform hover:scale-105">{t("myProjects.viewButton")}</a>
+                            <a href={project.git} className="inline-block mt-10 bg-indigo-900 hover:bg-indigo-800 rounded p-2 transition-transform duration-300 transform hover:scale-105">{t("myProjects.viewButton")}</a>
                           </div>
                         </div>
                         </FadingSection>
