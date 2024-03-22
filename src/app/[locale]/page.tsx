@@ -17,7 +17,7 @@ interface Project {
 }
 
 export default function Home() {
- 
+ //
   const pIntroStyle = "mb-10 text-white";
   const presentationCardStyle = "text-2xl";
   // Use translations from Home section
