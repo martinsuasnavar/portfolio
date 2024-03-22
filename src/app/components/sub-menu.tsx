@@ -9,7 +9,7 @@ export default function SubMenu({ buttonArray }: SubMenuProps) {
     
     return (
         <nav className="z-2">
-            <FadingSection subfix={'1'}>
+            <FadingSection subfix={'2'}>
             {buttonArray.map((button, index) => (
                 <div key={index}>
                     {button}

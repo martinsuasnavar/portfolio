@@ -146,10 +146,15 @@ export default function Home() {
           <article className="w-3/6 m-20 w-3/4 ml-auto mr-auto">
               {projectsArray.map(project => (
                 <div key={project.name}>
-                    <FadingSection subfix={'0'}>
+                    
                   <div  className="flex flex-col items-center mb-40">
                    
-                        <Image src={project.imgSrc} height={400} width={400} alt={`${project.name} logo`}/>
+                        <FadingSection subfix={'1'}>
+                          <div className="transition-transform duration-300 transform hover:scale-105">
+                            <Image src={project.imgSrc} height={400} width={400} alt={`${project.name} logo`}/>
+                          </div>
+                        </FadingSection>
+                        <FadingSection subfix={'0'}>
                         <div className="h-10"/>
                         <p>{project.description}</p>
                         <br/>
@@ -159,13 +164,20 @@ export default function Home() {
                         {project.info.length > 0 && 
                           <div className="text-blue-500">ⓘ {project.info} </div>
                         }
-                        {project.app.length > 0 && 
-                          <a href={project.app} className="mt-10 bg-blue-900 hover:bg-blue-800 rounded p-2">{t("myProjects.testIt")}</a>
-                        }
-                        <a href={project.git} className="mt-10 bg-indigo-900 hover:bg-indigo-800 rounded p-2">{t("myProjects.viewButton")}</a>
-                      
+                       <div className="h-10"/>
+                        <div className="block">
+                          {project.app.length > 0 && 
+                            <div className="transition-transform duration-300 transform hover:scale-105">
+                              <a href={project.app} className="  mt-10 bg-blue-900 hover:bg-blue-800 rounded p-2">{t("myProjects.testIt")}</a>
+                            </div>
+                          }
+                          <div className="h-10"/>
+                          <div className="transition-transform duration-300 transform hover:scale-105">
+                            <a href={project.git} className="mt-10 bg-indigo-900 hover:bg-indigo-800 rounded p-2 transition-transform duration-300 transform hover:scale-105">{t("myProjects.viewButton")}</a>
+                          </div>
+                        </div>
+                        </FadingSection>
                     </div>
-                    </FadingSection>
                   </div>
               ))}
           </article>

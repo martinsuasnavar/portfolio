@@ -3,7 +3,7 @@
 .fade-in-section-0 {
     color: white;
     opacity: 0;
-    transform: translateY(5vh);
+    transform: translateY(1vh);
     visibility: hidden;
     transition: opacity 0.6s ease-out, transform 0.7s ease-out;
     will-change: opacity, visibility;
@@ -11,13 +11,22 @@
 .fade-in-section-1 {
     color: white;
     opacity: 0;
-    transform: translateY(-0.5vh);
+    transform: translateY(-1vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 0.7s ease-out;
+    will-change: opacity, visibility;
+  }
+  .fade-in-section-2 {
+    color: white;
+    opacity: 0;
+    transform: translateY(-0.1vh);
     visibility: hidden;
     transition: opacity 0.2s ease-out, transform 0.7s ease-out;
     will-change: opacity, visibility;
   }
     .fade-in-section-0.is-visible, 
-    .fade-in-section-1.is-visible {
+    .fade-in-section-1.is-visible,
+    .fade-in-section-2.is-visible {
         opacity: 1;
         transform: none;
         visibility: visible;
