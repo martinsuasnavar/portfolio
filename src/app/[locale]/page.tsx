@@ -145,9 +145,9 @@ export default function Home() {
 
           <article className="w-3/6 m-20 w-3/4 ml-auto mr-auto">
               {projectsArray.map(project => (
-                <div>
+                <div key={project.name}>
                     <FadingSection subfix={'0'}>
-                  <div key={project.name} className="flex flex-col items-center mb-40">
+                  <div  className="flex flex-col items-center mb-40">
                    
                         <Image src={project.imgSrc} height={400} width={400} alt={`${project.name} logo`}/>
                         <div className="h-10"/>
