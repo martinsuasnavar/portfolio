@@ -6,7 +6,7 @@ export default function MailForm() {
 
     return(
         <div>
-       
+            
         </div>
     );
 }
