@@ -146,7 +146,7 @@ export default function Home() {
           </div>
 
 
-          <article className="w-3/6 m-20 w-3/4 ml-auto mr-auto">
+          <article className="w-80 sm:w-3/6  m-20 w-3/4 ml-auto mr-auto">
               {projectsArray.map(project => (
                 <div key={project.name}>
                     
@@ -161,29 +161,31 @@ export default function Home() {
                         <div className="h-10"/>
                         <div className="rounded-xl">
                         {project.screen.length > 0 && 
-                           <Image className="rounded-xl" src={project.screen} height={2400} width={2400} alt={`${project.name} screenshot`}/>
+                           <Image className="rounded-xl" src={project.screen} height={2000} width={2000} alt={`${project.name} screenshot`}/>
                         }
                         </div>
                         <div className="h-10"/>
-                        <p>{project.description}</p>
-                        <br/>
                        
-                       {project.warning.length > 0 && 
-                          <div className="text-yellow-500">⚠ {project.warning} </div>
-                        }
-                        {project.info.length > 0 && 
-                          <div className="text-blue-500">ⓘ {project.info} </div>
-                        }
-                     
-                       <div className="h-10"/>
-                          {project.app.length > 0 && 
-                            <div className="transition-transform duration-300 transform hover:scale-105">
-                              <a href={project.app} className="mt-10 bg-blue-900 hover:bg-blue-800 rounded p-2">{t("myProjects.testIt")}</a>
-                            </div>
-                          }
-                          <div className="transition-transform duration-300 transform hover:scale-105">
-                            <a href={project.git} className="inline-block mt-10 bg-indigo-900 hover:bg-indigo-800 rounded p-2 transition-transform duration-300 transform hover:scale-105">{t("myProjects.viewButton")}</a>
-                          </div>
+                            <p>{project.description}</p>
+                            <br/>
+                          
+                          {project.warning.length > 0 && 
+                              <div className="text-yellow-500">⚠ {project.warning} </div>
+                            }
+                            {project.info.length > 0 && 
+                              <div className="text-blue-500">ⓘ {project.info} </div>
+                            }
+                        
+                          <div className="h-10"/>
+                              {project.app.length > 0 && 
+                                <div className="transition-transform duration-300 transform hover:scale-105">
+                                  <a href={project.app} className="mt-10 bg-blue-900 hover:bg-blue-800 rounded p-2">{t("myProjects.testIt")}</a>
+                                </div>
+                              }
+                              <div className="transition-transform duration-300 transform hover:scale-105">
+                                <a href={project.git} className="inline-block mt-10 bg-indigo-900 hover:bg-indigo-800 rounded p-2 transition-transform duration-300 transform hover:scale-105">{t("myProjects.viewButton")}</a>
+                              </div>
+                        
                         </FadingSection>
                     </div>
                   </div>
