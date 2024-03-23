@@ -85,7 +85,7 @@ export default function Home() {
         <Separator topMargin="20" bottomMargin="5"/>
 
 
-        <section className="m-20 w-3/6 ml-auto mr-auto">
+        <section className="m-20 w-80 sm:w-3/6 ml-auto mr-auto">
 
           <div className={presentationCardStyle}>
             <WhiteBox>{t("presentationCards.intro")}  </WhiteBox>
