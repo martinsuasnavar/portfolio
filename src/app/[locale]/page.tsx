@@ -159,9 +159,9 @@ export default function Home() {
                         </FadingSection>
                         <FadingSection subfix={'0'}>
                         <div className="h-10"/>
-                        <div className="rounded ">
+                        <div className="rounded-xl">
                         {project.screen.length > 0 && 
-                           <Image src={project.screen} height={2400} width={2400} alt={`${project.name} screenshot`}/>
+                           <Image className="rounded-xl" src={project.screen} height={2400} width={2400} alt={`${project.name} screenshot`}/>
                         }
                         </div>
                         <div className="h-10"/>
