@@ -36,7 +36,8 @@ export default function RootLayout({
   return (
     <html lang={locale} className="dark">
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <title>{t("title")}</title>
+        <link rel="icon" href="/icon.ico" sizes="any" />
       </head>
       <body className={inter.className}>
       
