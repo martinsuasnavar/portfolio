@@ -14,6 +14,7 @@ interface Project {
     info: string;
     git: string;
     app: string;
+    screen: string;
 }
 
 export default function Home() {
@@ -32,7 +33,8 @@ export default function Home() {
       warning: "",
       info: `${t("myProjects.optimization")}`,
       git: "https://github.com/martinsuasnavar/panelboard-lite",
-      app: "https://panelboard-lite.vercel.app"
+      app: "https://panelboard-lite.vercel.app",
+      screen: "/screenshots/0.png"
     },
     {
       imgSrc: "/project-2.png",
@@ -41,7 +43,8 @@ export default function Home() {
       warning: `${t("myProjects.warning")}`,
       info: ``,
       git: "https://github.com/martinsuasnavar/leaf-messenger",
-      app: ""
+      app: "",
+      screen: ""
     }
   ];
 
@@ -156,14 +159,22 @@ export default function Home() {
                         </FadingSection>
                         <FadingSection subfix={'0'}>
                         <div className="h-10"/>
+                        <div className="rounded ">
+                        {project.screen.length > 0 && 
+                           <Image src={project.screen} height={2400} width={2400} alt={`${project.name} screenshot`}/>
+                        }
+                        </div>
+                        <div className="h-10"/>
                         <p>{project.description}</p>
                         <br/>
-                        {project.warning.length > 0 && 
+                       
+                       {project.warning.length > 0 && 
                           <div className="text-yellow-500">⚠ {project.warning} </div>
                         }
                         {project.info.length > 0 && 
                           <div className="text-blue-500">ⓘ {project.info} </div>
                         }
+                     
                        <div className="h-10"/>
                           {project.app.length > 0 && 
                             <div className="transition-transform duration-300 transform hover:scale-105">
