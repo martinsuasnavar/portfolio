@@ -31,7 +31,7 @@ export default function Home() {
       name: "PanelBoard Lite",
       description: `${t("myProjects.projectList.0")}`,
       warning: "",
-      info: `${t("myProjects.optimization")}`,
+      info: ``,
       git: "https://github.com/martinsuasnavar/panelboard-lite",
       app: "https://panelboard-lite.vercel.app",
       screen: "/screenshots/0.png"
