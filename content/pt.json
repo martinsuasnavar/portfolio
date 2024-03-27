@@ -13,7 +13,7 @@
         },
         "introParagraphs": { 
             "0": "Boas! Meu nome é Martín",
-            "1": "Há muito tempo, quando tinha 16, consegui meu primeiro experiência codificando ao tener que modificar jogos em Unity3D através do linguagem C#",
+            "1": "Há muito tempo, quando eu tinha 16, consegui meu primeiro experiência codificando ao tener que modificar jogos em Unity3D através do linguagem C#",
             "2": "Decidi probarme eu mesmo em um maior desafio quando entré no mondo do desenvolvimento web. De 2023 me dediquei a desenvolver sitos web por meu cuenta, primeiro enfocandome na interface do usuário mas com o paso do tempo também desenvolvi APIs e funções relacionadas com o servidor."
          },
          "techDetails": {
@@ -33,17 +33,17 @@
             "warning": "Esse projeto todavía essa em desenvolvimento, vea seu progreso em GitHub",
             "optimization": "Este proyecto todavía necesita mejoras, tengalo en cuenta si encuentra problemas",
             "viewButton": "Ver em GitHub",
-            "testIt": "Testar a app!"
+            "testIt": "Provar app!"
         }
     },
     "RootLayout": {
         "title": "Suasnavar.dev - Desenvolvimento web",
         "footer": {
-            "contactMe": "Contáctame",
-            "anyInquiere": "Para cualquier consulta puedes contactarme en cualquiera de los siguientes medios ➡️"
+            "contactMe": "Contata-me",
+            "anyInquiere": "Para qualquer consulta podes contate-me em qualquer dos seguintes meios ➡️"
         },
         "navBar": {
-            "switchLanguage": "Cambiar idioma",
+            "switchLanguage": "Mudar linguagem",
             "localePicture": "/logos/pt.png"
         }
     },
