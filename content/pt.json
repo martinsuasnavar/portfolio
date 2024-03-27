@@ -14,7 +14,7 @@
         "introParagraphs": { 
             "0": "Boas! Meu nome é Martín",
             "1": "Há muito tempo, quando eu tinha 16, consegui meu primeiro experiência codificando ao tener que modificar jogos em Unity3D através do linguagem C#",
-            "2": "Decidi probarme eu mesmo em um maior desafio quando entré ao mundo do desenvolvimento web. De 2023 me dediquei a desenvolver sites web pelo meu conta, primeiro enfocandome na interface do usuário mas com o paso do tempo também desenvolvi APIs e funções relacionadas com o servidor."
+            "2": "Decidi probarme eu mesmo em um maior desafio quando entrei ao mundo do desenvolvimento web. De 2023 me dediquei a desenvolver sites web pelo meu conta, primeiro focando na interface do usuário mas com o paso do tempo também desenvolvi APIs e funções relacionadas com o servidor."
          },
          "techDetails": {
             "favStack": "Meu stack favorito é",
@@ -28,10 +28,10 @@
          "myProjects": {
             "projectList": {
                 "0": "Uma app parecida a Trello, mas com paneles simplificados e não precisa log in. Os dados do usuario estão temporalmente guardados em cookies e pode ser baixados e importados do vuelta na app.",
-                "1": "App do chat criada em Laravel a qual permite a creación da salas e ele unirse a ellas. Toma ventaja do usar um banco de datos MySQL."
+                "1": "App do chat criada em Laravel a qual permite a creación da salas e ele unirse a ellas. Este app aproveita do uso um banco de datos MySQL."
             },
-            "warning": "Esse projeto todavía essa em desenvolvimento, vea seu progreso em GitHub",
-            "optimization": "Este proyecto todavía necesita mejoras, tengalo en cuenta si encuentra problemas",
+            "warning": "Este projeto todavía esta em desenvolvimento, vea seu progreso em GitHub",
+            "optimization": "Este projeto ainda precisa melhoiras, tenem em conta se encontra problemas",
             "viewButton": "Ver em GitHub",
             "testIt": "Provar app!"
         }
