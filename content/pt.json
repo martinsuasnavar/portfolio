@@ -28,7 +28,7 @@
          "myProjects": {
             "projectList": {
                 "0": "Uma app parecida a Trello, mas com paneles simplificados e não precisa log in. Os dados do usuario estão temporalmente guardados em cookies e pode ser baixados e importados do vuelta na app.",
-                "1": "App do chat criada em Laravel a qual permite a creación da salas e ele unirse a ellas. Este app aproveita do uso um banco de datos MySQL."
+                "1": "App do chat criada em Laravel a qual permite a creación da salas e ele unirse a elas. Este app aproveita do uso um banco de datos MySQL."
             },
             "warning": "Este projeto todavía esta em desenvolvimento, vea seu progreso em GitHub",
             "optimization": "Este projeto ainda precisa melhoiras, tenem em conta se encontra problemas",
@@ -49,11 +49,11 @@
     },
     "Mail": {
         "form": {
-            "titleCard": "Enviáme un mail",
-            "email": "Tu email",
-            "name": "Tu nombre",
-            "subject": "Tema",
-            "message": "Mensaje",
+            "titleCard": "Envie-me um mail",
+            "email": "Seu email",
+            "name": "Seu nombre",
+            "subject": "Assunto",
+            "message": "Mensagem",
             "send": "Enviar"
         }
     }
