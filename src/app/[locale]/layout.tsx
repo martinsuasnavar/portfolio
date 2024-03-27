@@ -10,7 +10,7 @@ import WhiteBox from "../components/white-box";
 
 const inter = Inter({ subsets: ["latin"] });
 
-type Locale = 'en' | 'es' | 'de';
+type Locale = 'en' | 'es' | 'de' | 'pt';
 
 interface RootLayoutProps {
   children: React.ReactNode;

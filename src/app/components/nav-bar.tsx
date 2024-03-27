@@ -53,7 +53,8 @@ export default function NavBar({switchLanguage, localePicture} : Internalization
 
     const options: Option[] = [
         { code: "en" },
-        { code: "es" }
+        { code: "es" },
+        { code: "pt" }
     ];
 
     const subMenuArray = [
@@ -71,8 +72,14 @@ export default function NavBar({switchLanguage, localePicture} : Internalization
                 <div><Image src="/logos/en.png" height={22} width={22} alt="en lang"/></div>
                 <div className="ml-2">English</div>
             </span>
-        </SubMenuButton>
+        </SubMenuButton>,
 
+        <SubMenuButton key={options[2].code} onClick={() => setOption(options[2])}>
+        <span className="flex justify-left ">
+            <div><Image src="/logos/pt.png" height={22} width={22} alt="en lang"/></div>
+            <div className="ml-2">Português</div>
+        </span>
+        </SubMenuButton>
     ];
 
     return (

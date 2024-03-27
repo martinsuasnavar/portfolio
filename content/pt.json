@@ -1,0 +1,60 @@
+{
+    "Home": {
+        "greet": "Olá!",
+        "fastPresentation": {
+            "0": "Sou Martín,",
+            "1": "um dev",
+            "2": "full stack"
+        },
+        "presentationCards": {
+            "intro": "Uma breve intro...",
+            "techdetails": "Detalhes técnicos",
+            "myProjects": "Meus projetos"
+        },
+        "introParagraphs": { 
+            "0": "Boas! Meu nome é Martín",
+            "1": "Há muito tempo, quando tinha 16, consegui meu primeiro experiência codificando ao tener que modificar jogos em Unity3D através do linguagem C#",
+            "2": "Decidi probarme eu mesmo em um maior desafio quando entré no mondo do desenvolvimento web. De 2023 me dediquei a desenvolver sitos web por meu cuenta, primeiro enfocandome na interface do usuário mas com o paso do tempo também desenvolvi APIs e funções relacionadas com o servidor."
+         },
+         "techDetails": {
+            "favStack": "Meu stack favorito é",
+            "stackDescs": {
+                "0": "para desenhar interfaces",
+                "1": "para criar APIs e funcionalidades do servidor",
+                "2": "para gerenciar banco de datos"
+            },
+            "note": "Se o cliente ao requiere, se puode mudar de Laravel a Node.js (com o framework Express.js)."
+         },
+         "myProjects": {
+            "projectList": {
+                "0": "Uma app parecida a Trello, pero com paneles simplificados e neu necesidad de log in. Os datos de usuario seu temporalmente guardados em cookies e pode ser descargados e importados do vuelta na app.",
+                "1": "Aplicación do chat criada em Laravel a cuál permite a creación de salas e ele unirse a ellas. Toma ventaja do usar um banco de datos MySQL."
+            },
+            "warning": "Esse projeto todavía essa em desenvolvimento, vea seu progreso em GitHub",
+            "optimization": "Este proyecto todavía necesita mejoras, tengalo en cuenta si encuentra problemas",
+            "viewButton": "Ver em GitHub",
+            "testIt": "Testar a app!"
+        }
+    },
+    "RootLayout": {
+        "title": "Suasnavar.dev - Desenvolvimento web",
+        "footer": {
+            "contactMe": "Contáctame",
+            "anyInquiere": "Para cualquier consulta puedes contactarme en cualquiera de los siguientes medios ➡️"
+        },
+        "navBar": {
+            "switchLanguage": "Cambiar idioma",
+            "localePicture": "/logos/pt.png"
+        }
+    },
+    "Mail": {
+        "form": {
+            "titleCard": "Enviáme un mail",
+            "email": "Tu email",
+            "name": "Tu nombre",
+            "subject": "Tema",
+            "message": "Mensaje",
+            "send": "Enviar"
+        }
+    }
+}
