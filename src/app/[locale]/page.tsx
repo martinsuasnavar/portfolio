@@ -43,7 +43,7 @@ export default function Home() {
       warning: `${t("myProjects.warning")}`,
       info: ``,
       git: "https://github.com/martinsuasnavar/leaf-messenger",
-      app: "",
+      app: "https://leaf-messenger.vercel.app",
       screen: ""
     }
   ];
