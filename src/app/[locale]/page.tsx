@@ -44,7 +44,7 @@ export default function Home() {
       info: ``,
       git: "https://github.com/martinsuasnavar/leaf-messenger",
       app: "https://leaf-messenger.vercel.app",
-      screen: ""
+      screen: "/screenshots/1.png"
     }
   ];
 
