@@ -13,8 +13,8 @@
         },
         "introParagraphs": { 
            "0": "Greetings! I'm Martin",
-           "1": "A long time ago, when I was 16, I got my first experience programming as I had to modify videogames in Unity3D with the C# language",
-           "2": "I decided to test myself on a bigger challenge by diving in web development. Since 2023 I started developing websites by myself, first tackling off the Interface but as time went on I also developed APIs and server related functions."
+           "1": "Years ago when I was 16, I've experienced my first time programming something, what I had to do was to modify videogames in the Unity3D game engine, through the C# language.",
+           "2": "Since 2023 I went even further and I challenged myself to get into web development, I've discovered that this is what I wanted, and I kept building my skills basing them on a pair of Full Stack technologies."
         },
         "techDetails": {
             "favStack": "My favorite tech stack is",
