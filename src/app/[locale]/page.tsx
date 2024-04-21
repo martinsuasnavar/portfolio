@@ -161,7 +161,7 @@ export default function Home() {
             </p>
             <div className="flex justify-center items-center">
             {techArray.map(tech => (
-              <div className="m-4 items-center align-center flex flex-col justify-center text-white text-opacity-0 hover:text-opacity-100 transition-transform duration-300 transform hover:scale-105">
+              <div key={tech.name} className="m-4 items-center align-center flex flex-col justify-center text-white text-opacity-0 hover:text-opacity-100 transition-transform duration-300 transform hover:scale-105">
                 <Image src={tech.imgSrc} alt={`${tech.name} logo`} width={40} height={40}/>
                 <div className="text-sm mt-4 align-center">{tech.name}</div>
               
@@ -177,7 +177,7 @@ export default function Home() {
 
         </section>
         
-        <Separator topMargin="10" bottomMargin="10"/>
+        <Separator topMargin="0" bottomMargin="10"/>
 
         <section className="m-20">
 
