@@ -13,17 +13,17 @@
         },
         "introParagraphs": { 
            "0": "Greetings! I'm Martin",
-           "1": "Years ago when I was 16, I've experienced my first time programming something, what I had to do was to modify videogames in the Unity3D game engine, through the C# language.",
-           "2": "Since 2023 I went even further and I challenged myself to get into web development, I've discovered that this is what I wanted, and I kept building my skills basing them on a pair of Full Stack technologies."
+           "1": "Years ago when I was 16, I got my first experience programming, as I modified Unity3D videogames, through the C# language.",
+           "2": "Since 2023 I went even further and I challenged myself to get into web development, I've discovered that this is what I wanted, I kept bulding my skills and I'm proud to say this made me achieve good results in my career.s"
         },
         "techDetails": {
-            "favStack": "My favorite tech stack is",
+            "favStack": "My complete tech stack is",
             "stackDescs": {
                 "0": "to design interfaces",
                 "1": "to build APIs and server related functions",
                 "2": "to manage databases"
             },
-            "note": "If the client requires it, Laravel can be switched to Node.js (with Express.js framework)."
+            "note": "* tech varies on requirements"
         },
         "myProjects": {
             "projectList": {

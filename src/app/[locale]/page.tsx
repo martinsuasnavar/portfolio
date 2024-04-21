@@ -6,6 +6,11 @@ import WhiteBox from "@/app/components/white-box";
 import FadingSection from "../components/fading-section";
 import './page.css'; // Importing custom CSS file
 
+interface Tech {
+  imgSrc: string;
+  name: string;
+}
+
 interface Project {
     imgSrc: string;
     name: string;
@@ -24,6 +29,41 @@ export default function Home() {
   // Use translations from Home section
   const t = useTranslations("Home");
 
+  const techPath = "/logos/tech";
+  const techArray: Tech[] = [
+    {
+      imgSrc: `${techPath}/react.png`,
+      name: "React.js",
+    },
+    {
+      imgSrc: `${techPath}/next.png`,
+      name: "Next.js",
+    },
+    {
+      imgSrc: `${techPath}/node.png`,
+      name: "Node.js",
+    },
+    {
+      imgSrc: `${techPath}/express.png`,
+      name: "Express.js",
+    },
+    {
+      imgSrc: `${techPath}/php.png`,
+      name: "PHP",
+    },
+    {
+      imgSrc: `${techPath}/laravel.png`,
+      name: "Laravel",
+    },
+    {
+      imgSrc: `${techPath}/python.png`,
+      name: "Python",
+    },
+    {
+      imgSrc: `${techPath}/django.png`,
+      name: "Django",
+    }
+  ]
 
   const projectsArray: Project[] = [
     {
@@ -119,15 +159,16 @@ export default function Home() {
             <p className={pIntroStyle}>
             {t("techDetails.favStack")}
             </p>
-            <ul>
-              <li>• <strong>React.js/Next.js</strong>, {t("techDetails.stackDescs.0")}</li>
-              <li>• <strong>PHP/Laravel</strong>, {t("techDetails.stackDescs.1")}</li>
-              <li>• <strong>mySQL</strong>, {t("techDetails.stackDescs.2")}</li>
-            </ul>
-            <br/>
-            <div className={pIntroStyle}>
-              {t("techDetails.note")}
+            <div className="flex justify-center items-center">
+            {techArray.map(tech => (
+              <div className="m-4 items-center align-center flex flex-col justify-center text-white text-opacity-0 hover:text-opacity-100 transition-transform duration-300 transform hover:scale-105">
+                <Image src={tech.imgSrc} alt={`${tech.name} logo`} width={40} height={40}/>
+                <div className="text-sm mt-4 align-center">{tech.name}</div>
+              
+              </div>
+            ))}
             </div>
+            <br/>
           </FadingSection>
           </article>
          

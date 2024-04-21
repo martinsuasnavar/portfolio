@@ -13,17 +13,17 @@
         },
         "introParagraphs": { 
             "0": "¡Buenas! Mi nombre es Martín",
-            "1": "Hace mucho tiempo, cuando tenía 16 años, obtuvé mi primera experiencia programando al tener que modificar videojuegos en Unity3D por medio del lenguaje C#",
-            "2": "Decidí probarme a mi mismo en un mayor desafío cuando entré en el mundo del desarrollo web. Desde 2023 me dediqué a desarrollar sitios web por mi cuenta, primero enfocandome en la interfaz de usuario pero con el paso del tiempo también desarrollé APIs y funciones relacionadas con el servidor."
+            "1": "Hace años cuando yo tenia 16, obtuvé mi primera experiencia programando al modificar juegos de Unity3D en lenguaje C#.",
+            "2": "Desde 2023 me dediqué a desarrollar sitios web por mi cuenta, primero enfocandome en la interfaz de usuario pero con el paso del tiempo también desarrollé APIs y funciones relacionadas con el servidor."
          },
          "techDetails": {
-            "favStack": "Mi stack favorito es",
+            "favStack": "Mi stack completo es",
             "stackDescs": {
                 "0": "para diseñar interfaces",
                 "1": "para crear APIs y funcionalidades de servidor",
                 "2": "para administrar bases de datos"
             },
-            "note": "Si el cliente lo requiere, se puede cambiar de Laravel a Node.js (con el framework Express.js)."
+            "note": "* la tecnologia varia segun los requerimientos"
          },
          "myProjects": {
             "projectList": {

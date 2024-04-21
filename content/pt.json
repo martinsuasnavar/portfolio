@@ -13,17 +13,17 @@
         },
         "introParagraphs": { 
             "0": "Boas! Meu nome é Martín",
-            "1": "Quando eu tinha 16, eu tuve meu primeria experiencia programando algo ao modificar jogos de Unity3D pelo linguagem C#",
-            "2": "Decidi probarme eu mesmo em um maior desafio quando entrei ao mundo do desenvolvimento web. De 2023 me dediquei a desenvolver sites web pelo meu conta, primeiro focando na interface de usuário mas com o paso do tempo também desenvolvi APIs e funções relacionadas com o servidor."
+            "1": "Quando eu tinha 16, eu tuve meu primeria experiencia programando ao modificar jogos de Unity3D pelo linguagem C#",
+            "2": "De 2023 me dediquei a desenvolver sites web pelo meu conta, primeiro focando na interface de usuário mas com o paso do tempo também desenvolvi APIs e funções relacionadas com o servidor."
          },
          "techDetails": {
-            "favStack": "Meu stack favorito é",
+            "favStack": "Meu stack completo é",
             "stackDescs": {
                 "0": "para desenhar interfaces",
                 "1": "para criar APIs e funcionalidades do servidor",
                 "2": "para gerenciar banco de dados"
             },
-            "note": "Se o cliente ao requiere, se puode mudar de Laravel para Node.js (com o framework Express.js)."
+            "note": "* tech pude mudar por os requrementos"
          },
          "myProjects": {
             "projectList": {
