@@ -9,6 +9,7 @@ import './page.css'; // Importing custom CSS file
 interface Tech {
   imgSrc: string;
   name: string;
+  link: string;
 }
 
 interface Project {
@@ -34,34 +35,42 @@ export default function Home() {
     {
       imgSrc: `${techPath}/react.png`,
       name: "React.js",
+      link: "https://react.dev/",
     },
     {
       imgSrc: `${techPath}/next.png`,
       name: "Next.js",
+      link: "https://nextjs.org/",
     },
     {
       imgSrc: `${techPath}/node.png`,
       name: "Node.js",
+      link: "https://nodejs.org/",
     },
     {
       imgSrc: `${techPath}/express.png`,
       name: "Express.js",
+      link: "https://expressjs.com/",
     },
     {
       imgSrc: `${techPath}/php.png`,
       name: "PHP",
+      link: "https://www.php.net/",
     },
     {
       imgSrc: `${techPath}/laravel.png`,
       name: "Laravel",
+      link: "https://laravel.com/",
     },
     {
       imgSrc: `${techPath}/python.png`,
       name: "Python",
+      link: "https://www.python.org/",
     },
     {
       imgSrc: `${techPath}/django.png`,
       name: "Django",
+      link: "https://www.djangoproject.com/",
     }
   ]
 
@@ -165,11 +174,11 @@ export default function Home() {
             <FadingSection subfix={'1'}>
             <div className="flex justify-center items-center">
             {techArray.map(tech => (
-              <div key={tech.name} className="m-4 items-center align-center flex flex-col justify-center text-white text-opacity-0 hover:text-opacity-100 transition-transform duration-300 transform hover:scale-105">
+              <a key={tech.name} href={tech.link} className="cursor-pointer m-4 items-center align-center flex flex-col justify-center text-white text-opacity-0 hover:text-opacity-100 transition-transform duration-300 transform hover:scale-105">
                 <Image src={tech.imgSrc} alt={`${tech.name} logo`} width={40} height={40}/>
                 <div className="text-sm mt-4 align-center">{tech.name}</div>
               
-              </div>
+              </a>
             ))}
             </div>
             <br/>
