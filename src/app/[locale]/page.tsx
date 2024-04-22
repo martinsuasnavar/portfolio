@@ -330,7 +330,7 @@ export default function Home() {
                         <div className="h-5"/>
                         <div className="flex justify-center items-center">
                           {project.tech.map(tech => (
-                           <div className="m-2">
+                           <div key={tech} className="m-2">
                               <Image src={techArray[tech].imgSrc} alt={`${techArray[tech].name} logo`} width={40} height={40}/>
                           </div>
                           ))}
