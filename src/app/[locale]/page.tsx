@@ -134,7 +134,7 @@ export default function Home() {
          
 
           <article>
-            <FadingSection subfix={'0'}>
+            <FadingSection subfix={'1'}>
             <div className={pIntroStyle}/>
             <p className={pIntroStyle}>
         
@@ -142,9 +142,11 @@ export default function Home() {
             <p className={pIntroStyle}>
               {t("introParagraphs.1")}
             </p>
+            <FadingSection subfix={'0'}>
             <p className={pIntroStyle}>
               {t("introParagraphs.2")}
             </p>
+            </FadingSection>
 
             <div className="h-10"/>
 
@@ -154,11 +156,13 @@ export default function Home() {
             </div>
         
 
-            <FadingSection subfix={'0'}>
+            <FadingSection subfix={'1'}>
             <div className="h-10"/>
             <p className={pIntroStyle}>
             {t("techDetails.favStack")}
             </p>
+            </FadingSection>
+            <FadingSection subfix={'1'}>
             <div className="flex justify-center items-center">
             {techArray.map(tech => (
               <div key={tech.name} className="m-4 items-center align-center flex flex-col justify-center text-white text-opacity-0 hover:text-opacity-100 transition-transform duration-300 transform hover:scale-105">
