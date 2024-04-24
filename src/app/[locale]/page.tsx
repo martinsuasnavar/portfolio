@@ -274,7 +274,7 @@ export default function Home() {
             </div>
             <div className="flex justify-center items-center">
             {backTechArray.map(tech => (
-              <a key={tech.name} href={tech.link} className="cursor-pointer m-2 items-center align-center flex flex-col justify-center text-white text-opacity-0 hover:text-opacity-100 transition-transform duration-300 transform hover:scale-105">
+              <a key={tech.name} href={tech.link} className="cursor-pointer m-2 md:m-4 items-center align-center flex flex-col justify-center text-white text-opacity-0 hover:text-opacity-100 transition-transform duration-300 transform hover:scale-105">
                 <Image src={tech.imgSrc} alt={`${tech.name} logo`} width={40} height={40}/>
                 <div className="text-sm mt-4 align-center">{tech.name}</div>
               
