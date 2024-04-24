@@ -92,17 +92,17 @@ export default function Home() {
     {
       imgSrc: `${techPath}/mysql.png`,
       name: "MySQL",
-      link: "https://www.djangoproject.com/",
+      link: "https://www.mysql.com/",
     },
     {
       imgSrc: `${techPath}/mongodb.png`,
       name: "MongoDB",
-      link: "https://www.djangoproject.com/",
+      link: "https://www.mongodb.com/",
     },
     {
       imgSrc: `${techPath}/postgre.png`,
       name: "PostgreSQL",
-      link: "https://www.djangoproject.com/",
+      link: "https://www.postgresql.org/",
     }
   ]
   const techArray: Tech[] = [
