@@ -19,9 +19,9 @@ interface RootLayoutProps {
 
 /* reusable classes */
 // contact box
-const contactBox = "z-0 rounded bg-gradient-to-r from-pink-900 to-indigo-900  w-20 sm:w-40 h-30 sm:h-30 m-4 p-1 sm:p-5 text-center transition-transform duration-300 transform hover:scale-105";
+const contactBox = "z-0 rounded bg-gradient-to-r from-pink-900 to-indigo-900  w-20 md:w-40 h-30 md:h-30 m-4 p-1 md:p-5 text-center transition-transform duration-300 transform hover:scale-105";
 const cBoxContent = "flex flex-col justify-center items-center ml-auto mr-auto";
-const cBContentText = "hidden sm:block mt-auto";
+const cBContentText = "hidden md:block mt-auto";
 
 export default function RootLayout({
   children,
@@ -46,7 +46,7 @@ export default function RootLayout({
       
       {children}
       <footer className="bg-black text-white p-10 justify-center ">
-        <div className="text-3xl mr-auto ml-auto flex justify-center sm:hidden">
+        <div className="text-3xl mr-auto ml-auto flex justify-center md:hidden">
           {t('footer.contactMe')}
         </div>
         <div className="flex mr-auto ml-auto justify-center">
@@ -54,8 +54,8 @@ export default function RootLayout({
           
         
           <section className="flex mr-auto ml-auto">
-          <section className="w-80 hidden sm:block">
-            <div className="text-sm font-bold sm:text-3xl mb-2">
+          <section className="w-80 hidden md:block">
+            <div className="text-md font-bold md:text-3xl mb-2">
             <WhiteBox>{t('footer.contactMe')}</WhiteBox>
             </div>
             <div>
