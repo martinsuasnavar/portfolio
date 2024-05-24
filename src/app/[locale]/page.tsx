@@ -349,7 +349,7 @@ export default function Home() {
                           <div className="h-10"/>
                               {project.app.length > 0 && 
                                 <div className="transition-transform duration-300 transform hover:scale-105">
-                                  <a href={project.app} className="mt-10 bg-blue-800 hover:bg-blue-800 rounded p-2">{t("myProjects.testIt")}</a>
+                                  <a href={project.app} className="mt-10 bg-blue-800 hover:bg-blue-800 rounded p-2">{t("myProjects.testIt")} ▶</a>
                                 </div>
                               }
                               <div className="transition-transform duration-300 transform hover:scale-105">
