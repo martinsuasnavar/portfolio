@@ -4,7 +4,7 @@ import WhiteBox from "./white-box";
 import Image from "next/image";
 import { useState, useRef, useEffect, useCallback } from "react";
 import SubMenu from "./sub-menu";
-import SubMenuButton from "../app/components/buttons/sub-menu-button";
+import SubMenuButton from "./buttons/sub-menu-button";
 import { useRouter } from "next/navigation";
 import { useSearchParams } from "next/navigation";
 
