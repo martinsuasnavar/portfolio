@@ -1,5 +1,5 @@
 "use client";
-import WhiteBox from "@/app/components/white-box";
+import WhiteBox from "@/components/white-box";
 import { useState, ChangeEvent, FormEvent } from "react";
 
 

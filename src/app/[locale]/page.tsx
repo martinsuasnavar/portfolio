@@ -1,9 +1,9 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import Separator from "../components/separator";
-import WhiteBox from "@/app/components/white-box";
-import FadingSection from "../components/fading-section";
+import Separator from "../../components/separator";
+import WhiteBox from "@/components/white-box";
+import FadingSection from "../../components/fading-section";
 import './page.css'; // Importing custom CSS file
 
 interface Tech {

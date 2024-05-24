@@ -1,12 +1,12 @@
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import NavBar from "@/app/components/nav-bar";
+import NavBar from "@/components/nav-bar";
 import "../globals.css";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-import WhiteBox from "../components/white-box";
+import WhiteBox from "../../components/white-box";
 
 const inter = Inter({ subsets: ["latin"] });
 
