@@ -79,13 +79,13 @@ export default function RootLayout({
               </a>
 
               {/*must include a send mail function contained in a page, which shall be redirected from this contact box*/}
-              <Link href={`/${locale}/mail`} className={contactBox}>
+              <div className={contactBox}>
                 <sub className={cBoxContent}>
                   <Image src="/logos/gmail-white.png" height={50} width={50} alt="gmail logo" />
                   <div className="h-5"/>
                   <div className={cBContentText}>msuasnavar21@gmail.com</div>
                 </sub>
-              </Link>
+              </div>
 
           </section>
          </div>
