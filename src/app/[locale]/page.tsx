@@ -78,14 +78,9 @@ export default function Home() {
       link: "https://laravel.com/",
     },
     {
-      imgSrc: `${techPath}/python.png`,
-      name: "Python",
-      link: "https://www.python.org/",
-    },
-    {
-      imgSrc: `${techPath}/django.png`,
-      name: "Django",
-      link: "https://www.djangoproject.com/",
+      imgSrc: `${techPath}/typescript.png`,
+      name: "TypeScript",
+      link: "https://www.typescriptlang.org/",
     },
   ]
   const dbTechArray: Tech[] = [
