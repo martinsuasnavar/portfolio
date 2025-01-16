@@ -81,7 +81,7 @@ export default function Home() {
       imgSrc: `${techPath}/typescript.png`,
       name: "TypeScript",
       link: "https://www.typescriptlang.org/",
-    },
+    }
   ]
   const dbTechArray: Tech[] = [
     {
@@ -155,6 +155,11 @@ export default function Home() {
       imgSrc: `${techPath}/postgre.png`,
       name: "PostgreSQL",
       link: "https://www.postgresql.org/",
+    },
+    {
+      imgSrc: `${techPath}/typescript.png`,
+      name: "TypeScript",
+      link: "https://www.typescriptlang.org/",
     }
   ]
 
@@ -172,14 +177,14 @@ export default function Home() {
     },
     {
       imgSrc: "/project-2.png",
-      name: "Leaf Messenger",
+      name: "Quick Trivia",
       description: `${t("myProjects.projectList.1")}`,
       warning: `${t("myProjects.warning")}`,
       info: ``,
       git: "https://github.com/martinsuasnavar/leaf-messenger",
       app: "https://leaf-messenger.vercel.app",
       screen: "/screenshots/1.png",
-      tech: [0,4,5,8],
+      tech: [1,2,11,8],
     }
   ];
 
