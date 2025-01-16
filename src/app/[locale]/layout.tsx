@@ -20,6 +20,7 @@ interface RootLayoutProps {
 /* reusable classes */
 // contact box
 const contactBox = "z-0 rounded bg-gradient-to-r from-pink-900 to-indigo-900  w-20 md:w-40 h-30 md:h-30 m-4 p-1 md:p-5 text-center transition-transform duration-300 transform hover:scale-105";
+const cvButton = "text-center align-center transition-transform duration-300 transform hover:scale-105";
 const cBoxContent = "flex flex-col justify-center items-center ml-auto mr-auto";
 const cBContentText = "hidden md:block mt-auto";
 
@@ -61,6 +62,7 @@ export default function RootLayout({
             <div>
             {t('footer.anyInquiere')}
             </div>
+           
           </section>
               <a href="https://github.com/martinsuasnavar" className={contactBox}>
                 <sub className={cBoxContent}>
@@ -89,6 +91,7 @@ export default function RootLayout({
 
           </section>
          </div>
+         <div className={cvButton}><a href="https://drive.google.com/file/d/1K-5amPdJJWnGyg1gEQ61Sqw8WsM4nihf/view?usp=sharing">{t('footer.downloadCV')}</a></div>
        </footer>
       </body>
      

@@ -40,7 +40,8 @@
         "title": "Suasnavar.dev - Web developer",
         "footer": {
             "contactMe": "Contact me",
-            "anyInquiere": "For any inquirie you can contact me on any of the following medias ➡️"
+            "anyInquiere": "For any inquirie you can contact me on any of the following medias ➡️",
+            "downloadCV": "DOWNLOAD CV"
         },
         "navBar": {
             "switchLanguage": "Switch language",

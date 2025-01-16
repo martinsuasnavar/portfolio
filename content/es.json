@@ -40,7 +40,8 @@
         "title": "Suasnavar.dev - Desarrollo web",
         "footer": {
             "contactMe": "Contáctame",
-            "anyInquiere": "Para cualquier consulta puedes contactarme en cualquiera de los siguientes medios ➡️"
+            "anyInquiere": "Para cualquier consulta puedes contactarme en cualquiera de los siguientes medios ➡️",
+            "downloadCV": "DESCARGAR CV"
         },
         "navBar": {
             "switchLanguage": "Cambiar idioma",
