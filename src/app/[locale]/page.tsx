@@ -179,7 +179,7 @@ export default function Home() {
       imgSrc: "/project-2.png",
       name: "Quick Trivia",
       description: `${t("myProjects.projectList.1")}`,
-      warning: `${t("myProjects.warning")}`,
+      warning: "",
       info: ``,
       git: "https://github.com/martinsuasnavar/quicktrivia",
       app: "https://quicktrivia.vercel.app",
