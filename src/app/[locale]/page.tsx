@@ -67,7 +67,7 @@ export default function Home() {
       name: "Express.js",
       link: "https://expressjs.com/",
     },
-    {
+    /*{
       imgSrc: `${techPath}/php.png`,
       name: "PHP",
       link: "https://www.php.net/",
@@ -76,7 +76,7 @@ export default function Home() {
       imgSrc: `${techPath}/laravel.png`,
       name: "Laravel",
       link: "https://laravel.com/",
-    },
+    },*/
     {
       imgSrc: `${techPath}/typescript.png`,
       name: "TypeScript",
@@ -93,12 +93,12 @@ export default function Home() {
       imgSrc: `${techPath}/mongodb.png`,
       name: "MongoDB",
       link: "https://www.mongodb.com/",
-    },
+    }/*,
     {
       imgSrc: `${techPath}/postgre.png`,
       name: "PostgreSQL",
       link: "https://www.postgresql.org/",
-    }
+    }*/
   ]
   const techArray: Tech[] = [
     {
