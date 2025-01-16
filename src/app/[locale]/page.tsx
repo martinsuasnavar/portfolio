@@ -181,8 +181,8 @@ export default function Home() {
       description: `${t("myProjects.projectList.1")}`,
       warning: `${t("myProjects.warning")}`,
       info: ``,
-      git: "https://github.com/martinsuasnavar/leaf-messenger",
-      app: "https://leaf-messenger.vercel.app",
+      git: "https://github.com/martinsuasnavar/quicktrivia",
+      app: "https://quicktrivia.vercel.app",
       screen: "/screenshots/1.png",
       tech: [1,2,11,8],
     }
