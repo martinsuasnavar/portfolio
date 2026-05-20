@@ -160,6 +160,11 @@ export default function Home() {
       imgSrc: `${techPath}/typescript.png`,
       name: "TypeScript",
       link: "https://www.typescriptlang.org/",
+    },
+    {
+      imgSrc: `${techPath}/tailwind.png`,
+      name: "TypeScript",
+      link: "https://www.typescriptlang.org/",
     }
   ]
 

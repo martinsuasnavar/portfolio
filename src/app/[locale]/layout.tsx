@@ -10,7 +10,8 @@ import WhiteBox from "../../components/white-box";
 
 const inter = Inter({ subsets: ["latin"] });
 
-type Locale = 'en' | 'es' | 'de' | 'pt';
+//type Locale = 'en' | 'es' | 'de' | 'pt';
+type Locale = 'en' | 'es';
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -91,7 +92,7 @@ export default function RootLayout({
 
           </section>
          </div>
-         <div className={cvButton}><a href="https://drive.google.com/file/d/1K-5amPdJJWnGyg1gEQ61Sqw8WsM4nihf/view?usp=sharing">{t('footer.downloadCV')}</a></div>
+         <div className={cvButton}><a href="https://drive.google.com/file/d/1Gps9e7KIM2sQ1X1vDj0TzEyS2clrbzbR/view?usp=sharing">{t('footer.downloadCV')}</a></div>
        </footer>
       </body>
      
