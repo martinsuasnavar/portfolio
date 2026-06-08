@@ -177,7 +177,7 @@ export default function Home() {
       info: ``,
       git: "https://github.com/martinsuasnavar/fieldproject-client",
       app: "https://fieldproject-client.vercel.app/",
-      screen: "/screenshots/3.png",
+      screen: "/screenshots/3.PNG",
       tech: [1,2,3,9],
     },
     /*
