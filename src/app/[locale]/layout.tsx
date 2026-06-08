@@ -20,7 +20,7 @@ interface RootLayoutProps {
 
 /* reusable classes */
 // contact box
-const contactBox = "z-0 rounded bg-gradient-to-r from-pink-900 to-indigo-900  w-20 md:w-40 h-30 md:h-30 m-4 p-1 md:p-5 text-center transition-transform duration-300 transform hover:scale-105";
+const contactBox = "z-0 rounded bg-gradient-to-r from-black to-indigo-950  w-20 md:w-40 h-30 md:h-30 m-4 p-1 md:p-5 text-center transition-transform duration-300 transform hover:scale-105";
 const cvButton = "text-center align-center transition-transform duration-300 transform hover:scale-105";
 const cBoxContent = "flex flex-col justify-center items-center ml-auto mr-auto";
 const cBContentText = "hidden md:block mt-auto";
@@ -48,21 +48,24 @@ export default function RootLayout({
       
       {children}
       <footer className="bg-black text-white p-10 justify-center ">
+          <div className="text-md justify-center flex font-bold md:text-3xl mb-2">
+            <WhiteBox>{t('footer.contactMe')}</WhiteBox>
+            </div>
+            <div>
+             
+            {t('footer.anyInquiere')}
+            </div>
+          {/*  
         <div className="text-3xl mr-auto ml-auto flex justify-center md:hidden">
           {t('footer.contactMe')}
-        </div>
+        </div>*/}
         <div className="flex mr-auto ml-auto justify-center">
          
           
         
           <section className="flex mr-auto ml-auto">
-          <section className="w-80 hidden md:block">
-            <div className="text-md font-bold md:text-3xl mb-2">
-            <WhiteBox>{t('footer.contactMe')}</WhiteBox>
-            </div>
-            <div>
-            {t('footer.anyInquiere')}
-            </div>
+          <section className="mt-2 hidden md:block">
+          
            
           </section>
               <a href="https://github.com/martinsuasnavar" className={contactBox}>
@@ -90,9 +93,16 @@ export default function RootLayout({
                 </sub>
               </div>
 
+             <a href="https://drive.google.com/file/d/1JWQtoZB9QIb6wTf7KiRoukDMCT7GYMFZ/view?usp=drive_link" className={` bg-gradient-to-r from-black to-indigo-800   ${contactBox}`}>
+                <sub className={cBoxContent}>
+                  <Image src="/resumee.png" height={50} width={50} alt="resumee/cv icon" />
+                  <div className="h-5"/>
+                  <div className={cBContentText}>{t('footer.downloadCV')}</div>
+                </sub>
+              </a>
           </section>
          </div>
-         <div className={cvButton}><a href="https://drive.google.com/file/d/1Gps9e7KIM2sQ1X1vDj0TzEyS2clrbzbR/view?usp=sharing">{t('footer.downloadCV')}</a></div>
+         <div className={cvButton}></div>
        </footer>
       </body>
      

@@ -1,20 +1,20 @@
 {
     "Home": {
-        "greet": "Hello!",
+        "greet": "Portfolio",
         "fastPresentation": {
-            "0": "I am Martin,",
-            "1": "a full stack",
-            "2": "dev"
+            "0": "Martín Suasnavar,",
+            "1": "> Software Developer",
+            "2": " "
         },
         "presentationCards": {
-            "intro": "A brief intro...",
+            "intro": "Profile",
             "techdetails": "Technical details",
             "myProjects": "My projects"
         },
         "introParagraphs": { 
-           "0": "Greetings! I'm Martin",
-           "1": "Years ago when I was 16, I got my first experience programming, as I modified Unity3D videogames, through the C# language.",
-           "2": "Since 2023 I went even further and I challenged myself to get into web development, I've discovered that this is what I wanted, I kept bulding my skills and I'm proud to say this made me achieve good results in my career.s"
+            "0": " ",
+            "1": "I am an advanced Computer & Science Engineering student with a strong focus on software development, having initially specialized in web development.",
+            "2": "I possess comprehensive knowledge of the SDLC (Software Development Life Cycle) and key core development concepts, such as the Object-Oriented Paradigm, as well as analysis and design with UML."
         },
         "techDetails": {
             "favStack": "My complete tech stack is",
@@ -28,7 +28,8 @@
         "myProjects": {
             "projectList": {
                 "0": "A Trello like app, but with simplified panels and no need to login. User data is temporaly stored in cookies and can be downloaded and imported back into the app.",
-                "1": "Simple web game where your general knowledge is tested. Takes advantage of using a MySQL database."
+                "1": "Simple web game where your general knowledge is tested. Takes advantage of using a MySQL database.",
+                "2": "An advanced project manager which integrates the Kanban to fasten up development through the cycle of life of software-"
             },
             "warning": "This project is still in development, check its progress in GitHub",
             "optimization": "This project still needs fixes, be aware of it if you encounter issues",
@@ -39,9 +40,9 @@
     "RootLayout": {
         "title": "Suasnavar.dev - Web developer",
         "footer": {
-            "contactMe": "Contact me",
-            "anyInquiere": "For any inquirie you can contact me on any of the following medias ➡️",
-            "downloadCV": "DOWNLOAD CV"
+            "contactMe": "Contact",
+            "anyInquiere": " ",
+            "downloadCV": "Resumee"
         },
         "navBar": {
             "switchLanguage": "Switch language",

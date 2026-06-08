@@ -170,6 +170,18 @@ export default function Home() {
 
   const projectsArray: Project[] = [
     {
+      imgSrc: "/project-4.webp",
+      name: "Kanban Manager",
+      description: `${t("myProjects.projectList.2")}`,
+      warning: "",
+      info: ``,
+      git: "https://github.com/martinsuasnavar/fieldproject-client",
+      app: "https://fieldproject-client.vercel.app/",
+      screen: "/screenshots/3.png",
+      tech: [1,2,3,9],
+    },
+    /*
+    {
       imgSrc: "/project-1.png",
       name: "PanelBoard Lite",
       description: `${t("myProjects.projectList.0")}`,
@@ -179,7 +191,7 @@ export default function Home() {
       app: "https://panelboard-lite.vercel.app",
       screen: "/screenshots/0.png",
       tech: [0,2,3,9],
-    },
+    },*/
     {
       imgSrc: "/project-2.png",
       name: "Quick Trivia",
@@ -204,10 +216,10 @@ export default function Home() {
       >
         <article className="flex justify-center">
           <div className="p-7 sm:ml-0 sm:p-0 flex">
-            <text className=" text-left mt-10 bg-gradient-to-r from-white via-white to-pink-200 inline-block text-transparent bg-clip-text">
+            <text className=" text-left mt-10 bg-gradient-to-r text-8xl from-white via-white to-blue-200 inline-block text-transparent bg-clip-text">
               {t("greet")}
             </text>
-            <div className="ml-10 text-pink-100 text-3xl text-left">
+            <div className="ml-10 text-blue-100 text-3xl text-left">
               <div className="justify-left flex mt-10 mb-4 ">
                 <div className="z-99 transition-transform duration-300 transform hover:scale-105">
                   <Image

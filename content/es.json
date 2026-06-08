@@ -1,20 +1,20 @@
 {
     "Home": {
-        "greet": "¡Hola!",
+        "greet": "Portafolio",
         "fastPresentation": {
-            "0": "Soy Martín,",
-            "1": "un dev",
-            "2": "full stack"
+            "0": "Martín Suasnavar",
+            "1": "> Software Developer",
+            "2": ""
         },
         "presentationCards": {
-            "intro": "Una breve intro...",
+            "intro": "Perfil",
             "techdetails": "Detalles técnicos",
-            "myProjects": "Mis proyectos"
+            "myProjects": "Proyectos"
         },
         "introParagraphs": { 
             "0": "¡Buenas! Mi nombre es Martín",
-            "1": "Hace años cuando yo tenia 16, obtuvé mi primera experiencia programando al modificar juegos de Unity3D en lenguaje C#.",
-            "2": "Desde 2023 me dediqué a desarrollar sitios web por mi cuenta, primero enfocandome en la interfaz de usuario pero con el paso del tiempo también desarrollé APIs y funciones relacionadas con el servidor."
+            "1": "Soy estudiante avanzado de Ingeniería Informatica, con un fuerte enfoque hacia el desarrollo de software, habiendome especialziado primeramente en desarrollo web.",
+            "2": "Poseo conocimientos completos de SDLC (Software Development Life Cycle) y conceptos clave para el desarrollo en general, como el Paradigma Orientado a Objectos, así como análisis y diseño con UML."
          },
          "techDetails": {
             "favStack": "Mi stack completo es",
@@ -28,7 +28,8 @@
          "myProjects": {
             "projectList": {
                 "0": "Una app parecida a Trello, pero con paneles simplificados y sin necesidad de loguearse. Los datos de usuario son temporalmente guardados en cookies y pueden ser descargados e importados de vuelta en la app.",
-                "1": "Simple juego web donde tu conocimiento general es puesto a prueba. Toma ventaja de usar una base de datos MySQL."
+                "1": "Simple juego web donde tu conocimiento general es puesto a prueba. Toma ventaja de usar una base de datos MySQL.",
+                "2": "Un avanzado gestor de proyectos que utiliza metodología Kanban para aceleran el desarrollo de software durante su ciclo de vida"
             },
             "warning": "Este proyecto todavía esta en desarrollo, vea su progreso en GitHub",
             "optimization": "Este proyecto todavía necesita mejoras, tengalo en cuenta si encuentra problemas",
@@ -39,9 +40,9 @@
     "RootLayout": {
         "title": "Suasnavar.dev - Desarrollo web",
         "footer": {
-            "contactMe": "Contáctame",
-            "anyInquiere": "Para cualquier consulta puedes contactarme en cualquiera de los siguientes medios ➡️",
-            "downloadCV": "DESCARGAR CV"
+            "contactMe": "Contacto",
+            "anyInquiere": " ",
+            "downloadCV": "Curriculum Vitae"
         },
         "navBar": {
             "switchLanguage": "Cambiar idioma",
