@@ -28,7 +28,7 @@
         "myProjects": {
             "projectList": {
                 "0": "A Trello like app, but with simplified panels and no need to login. User data is temporaly stored in cookies and can be downloaded and imported back into the app.",
-                "1": "Simple web game where your general knowledge is tested. Takes advantage of using a MySQL database.",
+                "1": "Simple web game where your general knowledge is tested. Consumes an external API to send questions to the client UI.",
                 "2": "An advanced project manager which integrates the Kanban to fasten up development through the cycle of life of software-"
             },
             "warning": "This project is still in development, check its progress in GitHub",
@@ -42,7 +42,7 @@
         "footer": {
             "contactMe": "Contact",
             "anyInquiere": " ",
-            "downloadCV": "Resumee"
+            "downloadCV": "Resume"
         },
         "navBar": {
             "switchLanguage": "Switch language",
