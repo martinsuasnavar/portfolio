@@ -2,7 +2,7 @@
     "Home": {
         "greet": "Portfolio",
         "fastPresentation": {
-            "0": "Martín Suasnavar,",
+            "0": "Martín Suasnavar",
             "1": "> Software Developer",
             "2": " "
         },
@@ -29,7 +29,7 @@
             "projectList": {
                 "0": "A Trello like app, but with simplified panels and no need to login. User data is temporaly stored in cookies and can be downloaded and imported back into the app.",
                 "1": "Simple web game where your general knowledge is tested. Consumes an external API to send questions to the client UI.",
-                "2": "An advanced project manager which integrates the Kanban to fasten up development through the cycle of life of software-"
+                "2": "An advanced project manager which integrates the Kanban to fasten up development through the cycle of life of software."
             },
             "warning": "This project is still in development, check its progress in GitHub",
             "optimization": "This project still needs fixes, be aware of it if you encounter issues",
