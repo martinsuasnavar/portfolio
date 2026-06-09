@@ -9,7 +9,7 @@
         "presentationCards": {
             "intro": "Profile",
             "techdetails": "Technical details",
-            "myProjects": "My projects"
+            "myProjects": "Projects"
         },
         "introParagraphs": { 
             "0": " ",
