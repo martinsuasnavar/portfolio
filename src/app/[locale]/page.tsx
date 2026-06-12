@@ -203,7 +203,7 @@ export default function Home() {
       info: ``,
       git: "https://github.com/martinsuasnavar/ai-project-client",
       app: "https://ai-project-client.vercel.app/",
-      screen: "/screenshots/4.PNG",
+      screen: "/screenshots/4.png",
       tech: [13,6],
     },
     /*
