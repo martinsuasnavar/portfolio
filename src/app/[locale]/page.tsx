@@ -55,6 +55,11 @@ export default function Home() {
       name: "Next.js",
       link: "https://nextjs.org/",
     },
+    {
+      imgSrc: `${techPath}/nuxt.png`,
+      name: "Nuxt.js",
+      link: "https://nuxt.com/",
+    }
   ]
   const backTechArray: Tech[] = [
     {
@@ -81,6 +86,11 @@ export default function Home() {
       imgSrc: `${techPath}/typescript.png`,
       name: "TypeScript",
       link: "https://www.typescriptlang.org/",
+    },
+    {
+      imgSrc: `${techPath}/python.png`,
+      name: "Python",
+      link: "https://www.python.org/",
     }
   ]
   const dbTechArray: Tech[] = [
@@ -93,12 +103,12 @@ export default function Home() {
       imgSrc: `${techPath}/mongodb.png`,
       name: "MongoDB",
       link: "https://www.mongodb.com/",
-    }/*,
+    },
     {
       imgSrc: `${techPath}/postgre.png`,
       name: "PostgreSQL",
       link: "https://www.postgresql.org/",
-    }*/
+    }
   ]
   const techArray: Tech[] = [
     {
@@ -165,6 +175,11 @@ export default function Home() {
       imgSrc: `${techPath}/tailwind.png`,
       name: "TypeScript",
       link: "https://www.typescriptlang.org/",
+    },
+    {
+      imgSrc: `${techPath}/nuxt.png`,
+      name: "Nuxt.js",
+      link: "https://nuxt.com/",
     }
   ]
 
@@ -179,6 +194,17 @@ export default function Home() {
       app: "https://fieldproject-client.vercel.app/",
       screen: "/screenshots/3.PNG",
       tech: [1,2,3,9],
+    },
+    {
+      imgSrc: "/project-5.png",
+      name: "Protoype GPT",
+      description: `${t("myProjects.projectList.3")}`,
+      warning: "",
+      info: ``,
+      git: "https://github.com/martinsuasnavar/ai-project-client",
+      app: "https://ai-project-client.vercel.app/",
+      screen: "/screenshots/4.PNG",
+      tech: [13,6],
     },
     /*
     {
@@ -201,7 +227,7 @@ export default function Home() {
       git: "https://github.com/martinsuasnavar/quicktrivia",
       app: "https://quicktrivia.vercel.app",
       screen: "/screenshots/1.png",
-      tech: [1,2,11,8],
+      tech: [1,2,11],
     }
   ];
 
