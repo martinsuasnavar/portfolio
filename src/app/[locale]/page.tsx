@@ -204,7 +204,7 @@ export default function Home() {
       git: "https://github.com/martinsuasnavar/prototype-gpt_client",
       app: "https://prototypegpt.vercel.app/",
       screen: "/screenshots/4.png",
-      tech: [13,6],
+      tech: [13,2,6],
     },
     /*
     {
